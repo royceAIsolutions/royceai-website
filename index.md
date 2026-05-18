@@ -19,7 +19,3 @@ We build AI receptionists that never miss a call. Serving auto dealerships and m
 
 **Ready to capture every call?**
 Visit: royceai.com
-
-## Affiliate Links
-
-- [Vapi AI](https://vapi.ai/?ref=royceai) - 20% recurring commission (I use this for Royce AI)
