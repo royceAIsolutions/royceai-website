@@ -21,12 +21,6 @@ Irvine auto dealerships are open 9am-8pm daily. But calls come in 24/7.
 - Speaks English, Spanish, Korean
 - Costs $495/month (vs $4,000+ for human)
 
-## Case Study: Newport Lexus
-
-Tested Royce AI for 14 days:
-- Captured 23 after-hours leads
-- ROI: $69,000 potential sales / $495 cost = 13,939% ROI
-
 ## Get Started
 
 Visit: royceai.com
