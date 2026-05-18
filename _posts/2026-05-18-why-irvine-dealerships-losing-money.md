@@ -7,7 +7,7 @@ categories: [auto-dealerships, ai-receptionist, irvine]
 
 # Why Irvine Auto Dealerships Are Losing $90K to Missed Calls
 
-**Newport Lexus (949) 477-7000** and **Audi Fletcher Jones (949) 791-1500** are open 9am-8pm daily. But calls come in 24/7.
+Irvine auto dealerships are open 9am-8pm daily. But calls come in 24/7.
 
 ## The Math
 
@@ -29,5 +29,4 @@ Tested Royce AI for 14 days:
 
 ## Get Started
 
-14-day free trial: royceai.com/trial
-Call: (949) 555-ROYCE
+Visit: royceai.com
