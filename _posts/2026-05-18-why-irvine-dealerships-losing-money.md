@@ -1,7 +1,7 @@
 ---
-layout: post
 title: "Why Irvine Auto Dealerships Are Losing Leads to Missed Calls"
 date: 2026-05-18
+description: "Irvine auto dealerships lose leads to missed calls. Royce AI captures every call 24/7 with multilingual AI receptionists."
 ---
 
 # Why Irvine Auto Dealerships Are Losing Leads to Missed Calls

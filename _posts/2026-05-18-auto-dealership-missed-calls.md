@@ -1,12 +1,8 @@
 ---
 title: "Auto Dealerships Lose Leads to Missed Calls: Royce AI Fixes"
 date: 2026-05-18
-layout: post
+description: "15-20% of auto dealership calls go unanswered, costing thousands in lost leads. Royce AI's 24/7 receptionist captures every call automatically, boosting conversions."
 ---
-
-# Auto Dealerships Lose Leads to Missed Calls: Royce AI Fixes
-
-Meta Description: 15-20% of auto dealership calls go unanswered, costing thousands in lost leads. Royce AI’s 24/7 receptionist captures every call automatically, boosting conversions.
 
 It’s 11:14 PM on a Sunday. A shopper fills out a lead form for a 2024 Civic, then calls your dealership to ask about test drive availability. No one picks up. They leave a voicemail, but your BDC doesn’t dial back until Tuesday afternoon—only to reach a disconnected number. By then, the Civic deal has closed three exits down at a competitor that answered their call immediately.
 
