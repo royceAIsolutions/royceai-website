@@ -18,4 +18,4 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 We build AI receptionists that never miss a call. Serving auto dealerships and medical practices in Orange County and beyond.
 
 **Ready to capture every call?**
-Visit: royceai.com
+Visit: [royceai.com](https://royceai.com)

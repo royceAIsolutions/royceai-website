@@ -26,4 +26,4 @@ Traditional human receptionists cannot scale to cover three languages 24/7. Mult
 
 ## Get Started
 
-Visit: royceai.com
+Ready to capture every call? Visit: [royceai.com](https://royceai.com)
