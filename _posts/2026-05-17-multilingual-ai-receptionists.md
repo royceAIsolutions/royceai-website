@@ -2,7 +2,6 @@
 layout: post
 title: "Multilingual AI Receptionists: English/Spanish/Korean Support"
 date: 2026-05-17 21:00:00 -0700
-categories: [blog]
 meta_description: "Discover how multilingual AI receptionists with English, Spanish, and Korean support help auto dealerships and medical practices capture every lead."
 ---
 
