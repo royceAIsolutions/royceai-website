@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Auto Industry Compliance in 2026: How Royce AI Solves Regulatory Challenges"
-date: 2026-05-18 02:00:00 -0700
+date: 2026-05-18
 categories: [auto-dealerships, compliance, ai-receptionist]
 meta_description: "Discover how Royce AI receptionists help auto dealerships meet 2026 compliance requirements including TCPA, ADA, and data privacy regulations."
 ---
