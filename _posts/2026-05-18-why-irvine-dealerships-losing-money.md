@@ -2,7 +2,7 @@
 layout: post
 title: "Why Irvine Auto Dealerships Are Losing Leads to Missed Calls"
 date: 2026-05-18
-categories: [auto-dealerships, ai-receptionist, irvine]
+categories: [blog]
 ---
 
 # Why Irvine Auto Dealerships Are Losing Leads to Missed Calls
