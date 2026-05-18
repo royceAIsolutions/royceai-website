@@ -23,4 +23,3 @@ Visit: royceai.com
 ## Affiliate Links
 
 - [Vapi AI](https://vapi.ai/?ref=royceai) - 20% recurring commission (I use this for Royce AI)
-- [50 Cold Email Templates](https://gumroad.com/royceai/email-templates) - $27
