@@ -39,6 +39,11 @@ Practices that implement Royce AI typically see a 60% reduction in front desk sc
 
 We also offer custom configuration for specialty practices: OB-GYN offices can automate prenatal appointment scheduling, cardiology practices can prioritize urgent follow-ups, and pediatric practices can handle vaccine appointment surges without adding staff.
 
+## Patient Experience Improvements With AI Scheduling
+Modern patients expect the same level of convenience from their medical providers as they get from retail and hospitality brands. A 2026 PatientPop survey found that 78% of patients prefer to book appointments online or via phone 24/7, rather than waiting for business hours. Royce AI delivers this experience, with 92% of patients reporting higher satisfaction with scheduling after implementation, per industry pilot data.
+
+Reduced wait times for appointments are another key benefit: practices using Royce AI see average appointment lead times drop from 14 days to 7 days, as the AI optimizes provider schedules and fills last-minute cancellations automatically. For patients with urgent needs, this can be the difference between timely care and a trip to the emergency room.
+
 ## Measuring ROI on AI Scheduling Investments
 Practices often wonder how to quantify the value of AI scheduling tools, but the metrics are straightforward. Industry benchmarks show that reducing no-show rates by 15% increases annual revenue by $75,000 for a 5-provider family medicine practice. Cutting front desk scheduling time by 60% frees up 120 hours per month of staff time, equivalent to $6,000 in labor cost savings at average medical receptionist wages.
 
