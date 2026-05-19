@@ -1,7 +1,7 @@
 ---
 title: "Auto Trade-In Calls: Royce AI Routing Fixes 2026"
 date: 2026-05-19
-description: "Auto dealers lose 20% of trade-in leads to poor routing. Royce AI streamlines calls, capturing every lead 24/7. Find 2026 solution."
+description: "Auto dealers lose up to 20% of trade-in leads to poor routing. Royce AI streamlines calls, capturing every lead 24/7. 2026 solution for dealers."
 ---
 
 Imagine a Chevrolet dealership in Lafayette, Louisiana on a rainy Tuesday morning. The phones are buzzing with customers asking to value their 2023 Silverado trade-ins, but the front desk staff is juggling service appointments and new car inquiries, routing three trade-in calls to the wrong department before the customer hangs up. This scenario plays out at thousands of dealerships daily, costing billions in lost inventory and sales. For dealerships already struggling to source quality used inventory amid a 8% drop in auction supply since 2023, losing trade-in leads is especially painful. Every missed call is a double loss: not only do you lose a potential sale, but you also miss the chance to add a high-demand used vehicle to your inventory.
