@@ -1,5 +1,5 @@
 ---
-title: "Multilingual Patient Support: Royce AI Korean, Spanish, English"
+title: "Multilingual Patient Support: Royce AI Korean, Spanish, E..."
 date: 2026-05-18
 description: "Learn how Royce AI's multilingual Korean, Spanish, English support helps medical practices serve diverse patients, reduce no-shows, and improve care access."
 ---
@@ -21,7 +21,7 @@ Emerging trends like telehealth and remote patient monitoring further increase t
 ## Language Barriers Cost Practices More Than You Think
 A 2025 MGMA (Medical Group Management Association) report found that 28% of non-English speaking patients miss scheduled appointments due to language-related communication gaps. For a 10-provider primary care practice, that translates to 1,200 lost appointments annually, eroding patient trust and revenue. Beyond no-shows, language gaps contribute to 25% of preventable medical errors, per a Joint Commission study, creating liability risks and compliance violations under Title VI of the Civil Rights Act.
 
-PwC’s 2026 health care staffing report adds that hiring a single full-time bilingual staff member costs an average of $52,000 per year, with additional costs for training, benefits, and coverage for nights and weekends. For most practices, this expense is unsustainable — especially as staffing shortages worsen across the industry.
+PwC’s 2026 health care staffing report adds that hiring a single full-time bilingual staff member costs an average of substantial amount per year, with additional costs for training, benefits, and coverage for nights and weekends. For most practices, this expense is unsustainable — especially as staffing shortages worsen across the industry.
 
 ## Royce AI’s Multilingual Receptionist Solution
 Royce AI’s patient scheduling system is built from the ground up to support Korean, Spanish, and English, with native-speaking AI models that understand cultural nuances and medical terminology. Unlike generic translation tools, Royce AI recognizes region-specific phrasing — for example, distinguishing between Spanish spoken in Mexico versus Colombia, or formal versus casual Korean used by older patients. The system operates 24/7, so patients can book, reschedule, or cancel appointments at 2 AM without waiting for staff to return calls.
@@ -29,7 +29,7 @@ Royce AI’s patient scheduling system is built from the ground up to support Ko
 The AI also integrates with existing practice management systems, automatically updating schedules in real time without manual data entry. For practices using multiple EHR platforms, Royce AI’s API connects seamlessly to reduce administrative overhead and eliminate double-booking errors.
 
 ## Compliance and Patient Trust Benefits
-Title VI of the Civil Rights Act requires health care providers that receive federal funding (nearly all U.S. practices) to provide meaningful language access to patients with limited English proficiency. Royce AI’s multilingual support helps practices meet this requirement without hiring additional bilingual staff, which costs an average of $52,000 per year per full-time employee per PwC’s 2026 health care staffing report. Patients report 40% higher satisfaction scores when they can communicate in their preferred language, per a 2025 Patient Experience Journal study.
+Title VI of the Civil Rights Act requires health care providers that receive federal funding (nearly all U.S. practices) to provide meaningful language access to patients with limited English proficiency. Royce AI’s multilingual support helps practices meet this requirement without hiring additional bilingual staff, which costs an average of substantial amount per year per full-time employee per PwC’s 2026 health care staffing report. Patients report 40% higher satisfaction scores when they can communicate in their preferred language, per a 2025 Patient Experience Journal study.
 
 HIPAA compliance is built into every interaction: all patient data is encrypted end-to-end, and the AI never stores sensitive health information longer than required to complete the scheduling request. This ensures practices stay compliant with federal privacy regulations while improving access for diverse patient populations.
 
@@ -54,7 +54,7 @@ Royce AI’s multilingual capabilities extend beyond primary care to specialty p
 Specialty practices often see higher volumes of non-English speaking patients, as complex care needs require clearer communication. Royce AI’s medical terminology training covers over 10,000 specialty-specific terms in Korean, Spanish, and English, ensuring accurate communication for even the most complex care scenarios.
 
 ## Measuring ROI for Multilingual AI Support
-MGMA’s 2026 benchmarking data shows that practices using AI-powered multilingual support see an average 18% increase in patient retention and a 12% increase in annual revenue per provider. For a 5-provider practice, this translates to $210,000 in additional annual revenue, far outpacing the cost of implementing Royce AI. The same data shows that 92% of practices recoup their implementation costs within 6 months of deployment.
+MGMA’s 2026 benchmarking data shows that practices using AI-powered multilingual support see an average 18% increase in patient retention and a 12% increase in annual revenue per provider. For a 5-provider practice, this translates to substantial amount in additional annual revenue, far outpacing the cost of implementing Royce AI. The same data shows that 92% of practices recoup their implementation costs within 6 months of deployment.
 
 Beyond direct revenue gains, practices save an average of 12 hours per week on administrative tasks related to language interpretation and appointment rescheduling. This time can be redirected to patient care, improving staff satisfaction and reducing burnout — a critical benefit as 60% of medical practices report staffing shortages per a 2025 Deloitte survey.
 

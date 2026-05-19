@@ -1,5 +1,5 @@
 ---
-title: "Royce AI Intake Automation Solves Medical Referral Management"
+title: "Royce AI Intake Automation Solves Medical Referral Manage..."
 date: 2026-05-18
 description: "Discover how Royce AI intake automation streamlines medical referral management, reduces lost referrals, and improves patient outcomes for healthcare practices."
 ---
