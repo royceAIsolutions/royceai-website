@@ -1,7 +1,7 @@
 ---
 title: "Multilingual Specialist Referrals: Royce AI Intake Solution"
 date: 2026-05-19
-description: "Medical practices lose up to 27% of specialist referrals due to language barriers. Royce AI's multilingual intake streamlines referrals for better patient access and outcomes."
+description: "Medical practices lose up to 27% of specialist referrals due to language barriers. Royce AI streamlines multilingual intake for better patient access."
 ---
 
 ## When Language Barriers Block Critical Care
