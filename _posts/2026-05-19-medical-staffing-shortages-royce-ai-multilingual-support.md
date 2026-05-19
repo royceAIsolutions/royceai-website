@@ -1,7 +1,7 @@
 ---
-title: "Medical Staffing Shortages? Royce AI Multilingual Support Fills the Gap"
+title: "Medical Staffing Shortages: Royce AI Multilingual Support"
 date: 2026-05-19
-description: "Medical practices face 40% staffing shortages in 2026. Royce AI's multilingual 24/7 support bridges the gap for Spanish, Korean, and English patients, improving access."
+description: "Medical practices face 40% staffing shortages in 2026. Royce AI's multilingual 24/7 support bridges gaps for Spanish, Korean, English patients."
 ---
 
 # Medical Staffing Shortages? Royce AI Multilingual Support Fills the Gap
@@ -68,7 +68,7 @@ Practices that adopt multilingual AI early are already seeing competitive advant
 
 ## Cost Savings Beyond Staffing
 
-While Royce AI eliminates the cost of hiring and retaining bilingual receptionists (average $42,000/year in salary plus benefits, per MGMA), the savings go far beyond personnel. Practices using Royce AI see a 22% reduction in phone tag (time spent calling patients back for missed calls), a 18% decrease in front-desk wait times, and a 15% increase in same-day appointment utilization. These operational efficiencies free up your existing staff to focus on high-value patient care tasks instead of administrative busywork.
+While Royce AI eliminates the cost of hiring and retaining bilingual receptionists (average competitive annual salary plus benefits, per MGMA), the savings go far beyond personnel. Practices using Royce AI see a 22% reduction in phone tag (time spent calling patients back for missed calls), a 18% decrease in front-desk wait times, and a 15% increase in same-day appointment utilization. These operational efficiencies free up your existing staff to focus on high-value patient care tasks instead of administrative busywork.
 
 ## Patient Experience Improvements
 
