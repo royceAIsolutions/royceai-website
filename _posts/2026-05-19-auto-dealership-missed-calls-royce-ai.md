@@ -1,10 +1,10 @@
 ---
 title: "Why Auto Dealerships Lose Leads to Missed Calls in 2026"
 date: 2026-05-19
-description: "15-20% of auto dealership calls go unanswered daily. Discover how Royce AI's 24/7 AI receptionist captures every lead, boosts sales, and eliminates missed opportunities."
+description: "15-20% of auto dealership calls go unanswered daily. Discover how Royce AI's 24/7 AI receptionist captures leads, boosts sales, eliminates missed opportunities."
 ---
 
-It's 7:15 PM on a Tuesday. A family is driving past a local Ford dealership, sees a F-150 they've been eyeing online for weeks, and decides to call to check if it's still available and if they can schedule a test drive for the weekend. The phone rings four times, then goes to voicemail. The family shrugs, pulls up the next Ford dealership 12 minutes away on Google Maps, calls them, and books a test drive for Saturday morning. That one missed call? It cost the first dealership a potential $48,000 sale, plus years of service revenue from a loyal customer.
+It's 7:15 PM on a Tuesday. A family is driving past a local Ford dealership, sees a F-150 they've been eyeing online for weeks, and decides to call to check if it's still available and if they can schedule a test drive for the weekend. The phone rings four times, then goes to voicemail. The family shrugs, pulls up the next Ford dealership 12 minutes away on Google Maps, calls them, and books a test drive for Saturday morning. That one missed call? It cost the first dealership a potential 48,000 sale, plus years of service revenue from a loyal customer.
 
 This scenario plays out thousands of times every day across the U.S. auto industry. According to recent data from Nicecall, 60% of all dealership calls come in after hours or when sales staff are busy on the lot or with other customers. Even worse, industry research shows 15-20% of dealership calls go completely unanswered during regular business hours due to understaffing, peak call volume, or receptionists being pulled away to handle in-person customers.
 
