@@ -1,7 +1,7 @@
 ---
 title: "Cut Medical No-Shows: Royce AI Reminder System"
 date: 2026-05-19
-description: "Patient no-shows cost medical practices billions annually. Learn how Royce AI's reminder system cuts missed appointments and improves access in 2026."
+description: "Patient no-shows cost medical practices billions annually. Learn how Royce AI's reminder system cuts more missed appointments and improves access in 2026."
 ---
 
 For Dr. Maria Patel, a family medicine provider in Columbus, Ohio, Tuesday mornings used to be the most frustrating part of her week. Dr. Patel runs a 5-provider family medicine practice with 1,200 active patients, and by 10 AM each Tuesday, nearly a quarter of her scheduled patients hadn’t arrived, leaving exam rooms empty, staff scrambling to fill slots, and significant potential revenue slipping away. “We’d spend 10 hours a week just calling patients to confirm appointments, only to have half not pick up, and another 20% never show up anyway,” she says. “Our front desk staff was burnt out, we were turning away new patients because we couldn’t fill slots, and it felt like we were fighting a losing battle against no-shows.”
