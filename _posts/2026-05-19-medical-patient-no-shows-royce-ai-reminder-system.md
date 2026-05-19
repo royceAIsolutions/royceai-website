@@ -27,7 +27,7 @@ Another major gap is two-way communication. Most reminder systems only send outb
 Compliance is another concern. Many reminder tools don’t integrate with existing EHR systems, forcing staff to manually update appointment records after every interaction. This increases the risk of errors, duplicate data entry, and HIPAA violations if patient information is mishandled. Practices using non-integrated tools spend an average of 5 extra hours per week reconciling appointment records, per MGMA 2024 data.
 
 ## How Royce AI’s Reminder System Works
-Royce AI’s patient reminder system is designed to solve these pain points with fully automated, multilingual, two-way communication that integrates seamlessly with your practice’s existing workflow. Here’s how it works:
+Royce AI’s patient reminder system is designed to solve these pain points with fully automated and intelligent, multilingual, two-way communication that integrates seamlessly with your practice’s existing workflow. Here’s how it works:
 
 1. **Personalized Multi-Channel Reminders**: Royce AI sends reminders via text, voice, and email based on each patient’s preferred communication method, stored securely in your EHR. Reminders are personalized with the patient’s name, appointment time, provider name, and even preparation instructions (e.g., “fast for 8 hours before your blood draw”).
 2. **Multilingual Support**: The system supports English, Spanish, and Korean, with native-speaking voice actors for voice reminders and culturally appropriate phrasing for text and email outreach. This ensures all patients, regardless of language proficiency, receive clear, actionable reminders.
