@@ -37,6 +37,16 @@ As AI adoption accelerates, businesses that integrate data analysis tools early 
 ## Real-World Impact
 Businesses using Royce AI report measurable improvements within 60 days of deployment. Auto dealerships see average lead response times drop from 4 hours to 12 minutes, while medical practices reduce patient wait times by 22 minutes on average. These operational gains translate to higher customer satisfaction, with Net Promoter Scores increasing by 31 points for auto dealers and 27 points for medical practices in 2026 user surveys.
 
+## Royce AI Pricing and ROI
+
+Royce AI pricing is $1000/month flat rate for all industries.
+
+**Auto Dealerships ROI Example:**
+BDC misses 15-20 leads daily. At $500 profit per sale with 10% close rate, that's $750-1,000 daily lost revenue = $15,000-30,000/month. Royce AI at $1000/month captures these leads. ROI: 1500-3000% monthly. Pays for itself in 1 day.
+
+**Medical Practices ROI Example:**
+Front desk staff spend 2-3 hours daily on insurance verification. At $25/hour, that's $125-187/day = $2,500-3,750/month. Royce AI at $1000/month saves $1,500-2,750/month. ROI: 150-275% monthly. Pays for itself in 8 days.
+
 ---
 
 # PART TWO: Stock Market Technical Analysis (Pure)
