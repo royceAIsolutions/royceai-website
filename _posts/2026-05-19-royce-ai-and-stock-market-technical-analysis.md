@@ -2,6 +2,7 @@
 title: "Royce AI Solutions and Stock Market Technical Analysis"
 date: 2026-05-19
 description: "Discover Royce AI Solutions for auto dealerships and medical practices. Plus full complete stock market technical analysis guide for research and learning."
+tags: [technical-analysis]
 ---
 
 # Royce AI Solutions and Stock Market Technical Analysis

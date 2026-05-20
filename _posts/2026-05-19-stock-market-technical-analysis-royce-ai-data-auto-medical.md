@@ -2,6 +2,7 @@
 title: "Stock Market Technical Analysis + Royce AI Auto Medical"
 date: 2026-05-19
 description: "Explore 2026 stock market technical analysis trends and how Royce AI powers data solutions for auto dealerships and medical practices nationwide in 2026."
+tags: [technical-analysis]
 ---
 
 ## Introduction
