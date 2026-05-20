@@ -7,25 +7,31 @@ title: Royce AI Solutions Blog
 
 Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto Dealerships & Medical Practices.
 
-## Latest Articles
+<div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
-{% assign articles = site.posts | where_exp: "post", "post.tags contains 'technical-analysis' == false" %}
-{% for post in articles limit:10 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+<div style="flex: 1; min-width: 300px;">
+<h2>📰 Latest Articles</h2>
+<ul>
+{% for post in site.posts limit:10 %}
+{% unless post.tags contains 'technical-analysis' %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+{% endunless %}
 {% endfor %}
+</ul>
+</div>
 
-**[View All Articles →]({{ site.url }}/all-articles)**
-
----
-
-## Technical Analysis
-
-{% assign tech_posts = site.posts | where: "tags", "technical-analysis" %}
-{% for post in tech_posts limit:10 %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+<div style="flex: 1; min-width: 300px;">
+<h2>📊 Technical Analysis</h2>
+<ul>
+{% for post in site.posts %}
+{% if post.tags contains 'technical-analysis' %}
+<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+{% endif %}
 {% endfor %}
+</ul>
+</div>
 
-**[View All Technical Analysis →]({{ site.url }}/technical-analysis)**
+</div>
 
 ---
 
