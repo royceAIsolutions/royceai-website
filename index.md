@@ -10,23 +10,21 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📰 Latest Articles</h2>
+<h2>📰 Latest Articles (Max 10)</h2>
 <ul>
-{% for post in site.posts limit:10 %}
-{% unless post.tags contains 'technical-analysis' %}
+{% assign articles = site.posts | where_exp: "post", "post.tags contains 'technical-analysis' == false" %}
+{% for post in articles limit:10 %}
 <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
-{% endunless %}
 {% endfor %}
 </ul>
 </div>
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📊 Technical Analysis</h2>
+<h2>📊 Technical Analysis (Max 10)</h2>
 <ul>
-{% for post in site.posts %}
-{% if post.tags contains 'technical-analysis' %}
+{% assign tech_posts = site.posts | where: "tags", "technical-analysis" | limit:10 %}
+{% for post in tech_posts %}
 <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
-{% endif %}
 {% endfor %}
 </ul>
 </div>
