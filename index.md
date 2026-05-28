@@ -12,9 +12,11 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="flex: 1; min-width: 300px;">
 <h2>📰 Latest Articles (Max 9)</h2>
 <ul>
-{% assign articles = site.posts | where_exp: "post", "post.tags contains 'technical-analysis' == false" %}
-{% for post in articles limit:9 %}
-<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+{% for post in site.posts %}
+  {% unless post.tags contains "technical-analysis" %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+  {% endunless %}
+  {% if forloop.index >= 9 %}{% break %}{% endif %}
 {% endfor %}
 </ul>
 </div>
@@ -22,9 +24,11 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="flex: 1; min-width: 300px;">
 <h2>📊 Technical Analysis (Max 9)</h2>
 <ul>
-{% assign tech_posts = site.posts | where_exp: "post", "post.tags contains 'technical-analysis'" | limit:9 %}
-{% for post in tech_posts %}
-<li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+{% for post in site.posts %}
+  {% if post.tags contains "technical-analysis" %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+  {% endif %}
+  {% if forloop.index >= 9 %}{% break %}{% endif %}
 {% endfor %}
 </ul>
 </div>

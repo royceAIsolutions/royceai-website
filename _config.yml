@@ -1,17 +1,19 @@
 title: Royce AI Solutions Blog
-description: AI Receptionists for Auto Dealerships & Medical Practices - Irvine, CA
+description: AI Receptionists for Auto Dealerships and Medical Practices - Irvine, CA
 baseurl: ""
 url: "https://royceaisolutions.github.io"
-theme: jekyll-theme-cayman
 
+theme: jekyll-theme-cayman
 markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Free GitHub Pages hosting - NO payment ever
-# Repo: github.com/royceai/royceai.github.io
-# Enable Pages: Settings -> Pages -> Source: main branch
-# Force rebuild Mon May 18 01:12:02 PDT 2026
-# Site updated 2026-05-27 00:25
-
+# Post defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: default
