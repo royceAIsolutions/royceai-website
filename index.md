@@ -5,24 +5,24 @@ title: Royce AI Solutions Blog
 
 # Royce AI Solutions Blog
 
-Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto Dealerships & Medical Practices.
+Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto Dealerships and Medical Practices.
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📰 Latest Articles (Max 10)</h2>
+<h2>📰 Latest Articles (Max 9)</h2>
 <ul>
 {% assign articles = site.posts | where_exp: "post", "post.tags contains 'technical-analysis' == false" %}
-{% for post in articles limit:10 %}
+{% for post in articles limit:9 %}
 <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
 {% endfor %}
 </ul>
 </div>
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📊 Technical Analysis (Max 10)</h2>
+<h2>📊 Technical Analysis (Max 9)</h2>
 <ul>
-{% assign tech_posts = site.posts | where: "tags", "technical-analysis" | limit:10 %}
+{% assign tech_posts = site.posts | where_exp: "post", "post.tags contains 'technical-analysis'" | limit:9 %}
 {% for post in tech_posts %}
 <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
 {% endfor %}
