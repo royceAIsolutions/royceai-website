@@ -17,3 +17,6 @@ defaults:
       type: posts
     values:
       layout: default
+
+# Force rebuild - cache invalidated 2026-05-27 19:15
+rebuild_cache: 1748386500
