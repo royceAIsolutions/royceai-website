@@ -10,7 +10,7 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📰 Latest Articles (Max 9)</h2>
+<h2>📰 Latest Articles</h2>
 <ul>
 {% for post in site.posts %}
   {% unless post.tags contains "technical-analysis" %}
@@ -22,7 +22,7 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 </div>
 
 <div style="flex: 1; min-width: 300px;">
-<h2>📊 Technical Analysis (Max 9)</h2>
+<h2>📊 Technical Analysis</h2>
 <ul>
 {% for post in site.posts %}
   {% if post.tags contains "technical-analysis" %}
