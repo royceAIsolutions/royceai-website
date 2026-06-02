@@ -1,7 +1,7 @@
 ---
 title: "Medical Practice Scheduling Chaos Solved by Royce AI"
 date: 2026-06-02
-description: "Discover how medical practices lose thousands in revenue from scheduling chaos and how Royce AI's intelligent scheduling system captures every patient call 24/7."
+description: "Discover how medical practices lose thousands in revenue from scheduling chaos and how Royce AI's intelligent system captures every patient call 24/7."
 ---
 
 # Medical Practice Scheduling Chaos Solved by Royce AI

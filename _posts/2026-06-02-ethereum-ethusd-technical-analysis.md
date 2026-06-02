@@ -1,7 +1,7 @@
 ---
 title: "Ethereum (ETH/USD) Technical Analysis June 2 2026"
 date: 2026-06-02
-description: "Comprehensive technical analysis of Ethereum (ETH/USD) covering RSI, MACD, moving averages, volume, support/resistance levels, Fibonacci retracements, and trading recommendations."
+description: "Comprehensive detailed technical analysis of Ethereum (ETH/USD) covering RSI, MACD, moving averages, volume, support/resistance, Fibonacci, and trading tips."
 categories: technical-analysis
 ---
 
