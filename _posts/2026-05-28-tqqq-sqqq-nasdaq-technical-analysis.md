@@ -2,6 +2,7 @@
 title: "TQQQ SQQQ Technical Analysis May 28 2026"
 date: 2026-05-28
 description: "Comprehensive technical analysis of ProShares TQQQ and SQQQ Nasdaq-100 leveraged ETFs including RSI, MACD, moving averages, volume, and trading recommendations."
+categories: technical-analysis
 tags: [tqqq, sqqq, nasdaq, leveraged-etf, technical-analysis]
 ---
 
