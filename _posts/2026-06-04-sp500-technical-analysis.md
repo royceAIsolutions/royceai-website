@@ -1,7 +1,7 @@
 ---
 title: "S&P 500 SPX Technical Analysis June 4 2026"
 date: 2026-06-04
-description: "S&P 500 SPY technical analysis June 4 - SPY at 752.42, RSI cooling to 67.91 from overbought, MACD positive at 13.84, ascending channel intact, key support 736.73, resistance 763.24."
+description: "S&P 500 SPX technical analysis June 4 - RSI at 67.9 cooling from overbought, MACD positive at 13.8, ascending channel, key support 736.7, resistance 763.2."
 categories: technical-analysis
 tags: [technical-analysis, sp500, spy, spx, equities, index]
 ---

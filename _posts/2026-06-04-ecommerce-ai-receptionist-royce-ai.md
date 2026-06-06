@@ -1,7 +1,7 @@
 ---
-title: "E-Commerce Is Losing Millions to Missed Calls — Royce AI Answers"
+title: "E-Commerce Loses Millions to Missed Calls — AI Fixes It"
 date: 2026-06-04
-description: "E-commerce businesses miss 35% of inbound calls during peak hours, losing up to 40,000 dollars monthly in abandoned-cart and order-inquiry revenue. Royce AI captures every call 24/7 for 1,000 dollars monthly."
+description: "E-commerce firms miss 35% of peak calls losing revenue. Royce AI captures every inquiry 24/7 from carts and orders for $1,000 per month with proven ROI."
 ---
 
 # E-Commerce Is Losing Millions to Missed Calls — Royce AI Answers
