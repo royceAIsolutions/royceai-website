@@ -3,6 +3,7 @@ title: "Bitcoin BTC-USD Technical Analysis June 2026"
 date: 2026-06-01
 description: "Bitcoin detailed technical analysis covering RSI, MACD, moving averages, volume, support resistance, chart patterns, Fibonacci, and Elliott Wave in June 2026."
 categories: technical-analysis
+tags: [technical-analysis]
 ---
 
 # Bitcoin (BTC-USD) Technical Analysis - June 1, 2026
