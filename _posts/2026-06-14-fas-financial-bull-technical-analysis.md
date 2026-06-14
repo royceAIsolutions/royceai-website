@@ -1,7 +1,7 @@
 ---
 title: "FAS Technical Analysis: Financial Bull 3X ETF Breaks Out"
 date: 2026-06-14
-description: "FAS ETF technical analysis June 14 2026: RSI MACD moving averages Fibonacci support resistance levels for Direxion Daily Financial Bull 3XShares."
+description: "FAS ETF technical analysis June 14 2026: RSI MACD moving averages Fibonacci support resistance levels for Direxion Daily Financial Bull 3X Shares ETF."
 categories: technical-analysis
 tags: [technical-analysis]
 ---

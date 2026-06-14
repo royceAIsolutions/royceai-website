@@ -1,7 +1,7 @@
 ---
 title: "E-Commerce Missed Calls: How AI Recovers Lost Revenue"
 date: 2026-06-14
-description: "E-commerce businesses lose 70% of carts and miss 30-42% of calls after hours. Royce AI voice agents recover abandoned carts and provide 24/7 customer service for 1000 dollars per month."
+description: "E-commerce businesses lose 70% of carts and miss 30-42% of calls after hours. Royce AI voice agents recover sales and provide 24/7 support for 1000 per month."
 ---
 
 ## The Hidden Revenue Drain in E-Commerce
