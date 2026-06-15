@@ -1,7 +1,7 @@
 ---
-title: "Dow Jones DJIA Technical Analysis: Blue-Chip Bounce From 50K Support"
+title: "Dow Jones DJIA Technical Analysis: Bounce From 50K Support"
 date: 2026-06-15
-description: "Dow Jones DJIA technical analysis June 15 2026 — RSI rebounding at 58.4, SMA 50/200 golden cross intact, price bounced 2.5% from 49,918 June 10 low. Key support 50,100, resistance 51,665."
+description: "Dow Jones DJIA bounce from 50K support - RSI 58.4, golden cross intact, price recovered 2.5% after June 10 dip. Key levels: support 50,100, resistance 51,665."
 categories: technical-analysis
 tags: [technical-analysis, dow-jones, djia, sp500, blue-chips]
 ---

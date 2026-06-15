@@ -1,7 +1,7 @@
 ---
 title: "Auto Dealerships Missed Calls - Royce AI Solution for 2026"
 date: 2026-06-15
-description: "Auto dealerships miss 25-40% of inbound calls costing $100K-plus in lost revenue annually. Royce AI captures every lead 24/7 with multilingual support for $1000 per month."
+description: "Auto dealerships miss 25-40% of inbound calls, losing thousands monthly. Royce AI captures every lead 24/7 with multilingual support for $1000 per month."
 ---
 
 # Auto Dealerships Missed Calls — Royce AI Solution for 2026
