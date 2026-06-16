@@ -1,0 +1,69 @@
+---
+title: "Nasdaq QQQ Technical Analysis: Tech Rally Powers Surge"
+date: 2026-06-16
+description: "QQQ surged 3.1% on US-Iran peace deal. RSI, MACD, moving average analysis, double bottom at $495, support $505, resistance $525. Bullish momentum building."
+categories: technical-analysis
+tags: [technical-analysis]
+---
+
+The Invesco QQQ Trust (QQQ) surged 3.1% on Monday, June 15, 2026, as news of a preliminary US-Iran peace agreement triggered a broad technology rally. The move was led by semiconductor stocks including Micron Technology and NVIDIA, with the leveraged TQQQ counterpart gaining an impressive 9.2%. The rally pushed QQQ back above the $515 level, recouping losses from the previous week's sell-off. However, questions remain about whether this surge marks the beginning of a sustained uptrend or a short-term relief rally within a broader consolidation pattern.
+
+## Current Price Action
+
+QQQ opened the week at $502.40 and surged to a high of $520.80 on Monday before settling at $518.35. The 3.1% single-day gain was the largest since May 18 and came on the back of the US-Iran peace deal that lowered oil prices and eased inflation concerns. The rally was broad-based, with 82% of QQQ components closing in positive territory. On Tuesday, the ETF is consolidating around $517.50, digesting Monday's gains. The price action has reclaimed the 20-day EMA and is now testing the 50-day SMA, which sits near $520. The daily candlestick formed a strong bullish marubozu on Monday, indicating dominant buying pressure throughout the session with little intraday profit-taking. Volume on Monday was 1.8 times the 20-day average, confirming institutional participation in the rally. The week's price range of $502 to $521 represents an expansion of nearly 50% compared to the prior week's range, indicating a volatility regime shift.
+
+## RSI Analysis
+
+The daily RSI has bounced sharply from 38.2 on Friday to 54.7 on Tuesday, crossing decisively above the neutral 50 level. This move signals a shift from bearish to bullish momentum on the daily timeframe. The RSI had been in oversold territory (below 30) on a closing basis on June 11, which now appears to have been a capitulation low. The rapid recovery above 50 is a classic signal of momentum reversal, particularly when accompanied by high volume as seen on Monday. On the weekly chart, the RSI reads 47.3 and is attempting to cross above the 50 level for the first time in three weeks. The four-hour RSI is elevated at 68.2, approaching overbought territory, which suggests a short-term pullback or consolidation may be imminent before the next leg higher. The monthly RSI at 51.8 is neutral, confirming the longer-term picture lacks clear directional bias.
+
+## MACD Analysis
+
+The daily MACD is showing early signs of a bullish crossover. The MACD line at -0.85 is converging rapidly on the signal line at -1.12, with the histogram narrowing from -1.40 to -0.27 over the past three sessions. A bullish MACD crossover above the signal line would occur if QQQ maintains its current price level for one more session, confirmed if the histogram turns positive. This would be the first MACD buy signal since May 28. On the weekly chart, the MACD remains bearish but is showing signs of bottoming, with the histogram contracting from -3.8 to -2.9. The weekly MACD line at -1.75 is still below the signal line at -0.95, keeping the medium-term trend bearish. A sustained move above $525 would be required to generate a weekly MACD buy signal. The monthly MACD histogram is flat, indicating the long-term trend lacks momentum in either direction.
+
+## Moving Averages
+
+The moving average structure is transitioning from bearish to neutral. QQQ has reclaimed the 20-day EMA at $510, which now acts as first support. The 50-day SMA at $520 is being tested as immediate resistance. A close above $520 would be technically significant as it would put price above the 50-day SMA for the first time since June 4. The 100-day SMA at $508 has been reclaimed, providing a solid support layer beneath the $510 level. The 200-day SMA at $497 remains well below current prices and is sloping upward, confirming that the long-term trend is still technically intact despite the recent volatility. The EMA structure shows the 12-day EMA crossing above the 26-day EMA, which is an early-stage golden cross on the short-term timeframe. The 50-day SMA is still below the 100-day SMA, maintaining the death cross condition from May 22, but the gap is narrowing rapidly. If the current rally continues, the 50-day SMA could cross above the 100-day SMA within two to three weeks, forming a bullish golden cross on the medium-term timeframe.
+
+## Volume Analysis
+
+Monday's volume of 62.4 million shares was the highest single-day volume in three weeks and 180% of the 20-day average. This volume confirmation is critical — the rally is not occurring on low participation but has institutional backing. On-Balance Volume (OBV) has surged to a two-week high, breaking above the declining trendline that had been in place since May 28. This OBV breakout precedes price action in many cases and suggests that smart money is accumulating shares. The Volume Price Trend (VPT) indicator has also turned positive for the first time in 12 sessions. Accumulation/distribution readings show net buying across all timeframes since Friday's close. The Chaikin Money Flow (CMF) has moved from -0.18 to +0.12, crossing above the zero line into positive territory. This combination of volume indicators all flashing bullish signals simultaneously is rare and suggests the rally has genuine institutional support rather than being purely retail-driven.
+
+## Support and Resistance Levels
+
+QQQ is trading in a new range following Monday's breakout. The first major support is now at $510, which aligns with the 20-day EMA and Monday's opening gap level. Below that, the $505 area represents the 100-day SMA and horizontal support from June 11. The $500 level is the psychologically important round number and the 200-day SMA confluence zone. On the upside, resistance at $520 (50-day SMA) is the immediate hurdle. A breakout above $520 would target the $525 level, which corresponds to the June 4 high and the upper Bollinger Band on the daily chart. The $535 level is the next major resistance from the May 28 high. Beyond that, the $540-$545 zone represents the May 2026 highs and would be the ultimate test of the rally's sustainability. The weekly chart shows additional resistance at $530 from the 20-week SMA.
+
+## Chart Patterns
+
+A double-bottom pattern has formed on the daily chart with lows at $491 on June 3 and $495 on June 11, with a neckline at $520 (the peak between the two lows). Monday's rally brought QQQ to within 0.5% of the neckline, and a confirmed breakout above $520 would complete the pattern with a measured move target of approximately $545. This target aligns perfectly with the May 2026 highs, giving the pattern additional technical credibility. A bullish flag pattern is also visible on the hourly chart, with the flagpole formed by Monday's surge and the flag developing as a tight consolidation near $517-518. A breakout from this flag would target $530-$535. The inverse head and shoulders pattern on the four-hour chart has already triggered, with the neckline at $505 broken on Monday, targeting $530.
+
+## Fibonacci Retracement
+
+Applying Fibonacci retracement to the decline from the May 28 high of $535 to the June 11 low of $495 reveals that QQQ has already cleared the 50% retracement at $515 and is testing the 61.8% retracement at $520. The 61.8% level is a critical Fibonacci threshold — a confirmed break above it would signal that the corrective wave is complete and the uptrend has resumed. The 78.6% retracement at $525 is the next target, followed by the 100% retracement at $535. The Fibonacci extension levels from the same move show targets at $545 (127.2%) and $555 (161.8%) for any continued rally. The 38.2% retracement at $510 now serves as support, consistent with the 20-day EMA level.
+
+## Bollinger Bands
+
+The daily Bollinger Bands expanded significantly following Monday's surge, with the upper band rising to $525 and the lower band declining to $491, widening the bandwidth to $34 from $26 at the end of last week. Price is trading near the upper band at $518, which can act as dynamic resistance in the short term. The middle band (20-day SMA) at $510 has flattened and is starting to slope upward, a subtle but important shift from the declining trajectory that had been in place since May 28. The bands are widening in a way that typically accompanies the start of a new trending move. On the four-hour chart, price has been riding the upper Bollinger Band since Monday afternoon, suggesting strong momentum that may require a period of consolidation before continuing higher.
+
+## Ichimoku Cloud
+
+The Ichimoku Cloud on the daily chart is showing the first signs of bullish improvement. Price has broken above the cloud for the first time since June 4, though the cloud itself remains bearish (red) with the Senkou Span A at $518 and Senkou Span B at $524. A confirmed close above the cloud would require price to stay above $524 for three consecutive sessions. The Tenkan-sen at $508 has crossed above the Kijun-sen at $504, forming a bullish TK cross that is a leading buy signal. The Chikou Span (lagging span) has broken above price action from 26 days ago, which is a confirming bullish signal. The cloud for the next two weeks projects a narrowing range between $510 and $525, suggesting that the immediate bias is for consolidation rather than an explosive move.
+
+## Elliott Wave Analysis
+
+The Elliott Wave count suggests that the correction from the May 28 high of $535 to the June 11 low of $495 completed a wave (4) or (B) pattern. Monday's surge with strong volume characteristics is consistent with the start of wave (5) or (C) higher. If this is a fifth wave, the target would be a new high above $535, potentially extending to $545-$555. The internal structure shows five sub-waves of the initial impulse leg from $495 to $521, with wave (i) at $505, wave (ii) at $500, wave (iii) at $518, wave (iv) at $512, and wave (v) at $521. If this count is correct, the current consolidation around $517 represents wave (ii) of the larger third wave, which would be followed by an extended wave (iii) toward $530-$535. The alternative count suggests that Monday's move was an A-B-C correction within a larger bear flag, which would cap the rally near $525.
+
+## Market Sentiment
+
+Market sentiment has pivoted sharply bullish following the US-Iran peace deal. The CNN Fear and Greed Index has moved from 32 (fear) to 48 (neutral) as the deal reduces geopolitical risk and lowers oil prices, which directly benefits technology stocks through reduced input costs. The CBOE Volatility Index (VIX) dropped 22% on Monday to 17.4, its lowest level in three weeks. Tech sector fund flows showed $2.8 billion in inflows on Monday, the largest single-day inflow in two months. Options market data shows the put/call ratio for QQQ dropping to 0.72 from 1.05 last week, indicating a shift from bearish to bullish sentiment among options traders. Institutional positioning data shows hedge funds increasing their tech exposure by approximately 3.5% over the past week.
+
+## Trading Recommendations
+
+The technical picture has improved significantly and favors a bullish bias. For short-term traders, buying pullbacks toward $510-$512 with a stop at $505 and a target of $525-$530 offers a favorable risk-reward ratio. A breakout above $520 on above-average volume would confirm the double-bottom pattern and could be traded aggressively with a target of $535-$540. For swing traders, the 200-day SMA at $497 provides a solid floor, and any dip toward $505 should be viewed as a buying opportunity. Bearish traders should wait for a daily close below $505 before considering short positions, as the current momentum strongly favors buyers. TQQQ offers leveraged exposure for aggressive traders, though position sizing should account for the 3x daily volatility.
+
+## Risk Factors
+
+Key risks include a failure at the 50-day SMA resistance of $520, which would trap breakout traders and could trigger a sharp reversal. The VIX's rapid decline from 24 to 17.4 in just three sessions suggests some complacency may be creeping into the market. Any negative headlines regarding the US-Iran deal implementation could reverse the risk-on trade. The Fed meeting later this month remains a significant event risk, with hawkish commentary potentially reversing the current rally. Additionally, the technology sector's elevated valuations relative to historical averages mean that any disappointment in earnings guidance could trigger outsized selling. The NASDAQ 100's concentration in mega-cap names creates single-stock risk, with NVIDIA and Microsoft alone accounting for approximately 15% of QQQ's weighting.
+
+## Conclusion
+
+QQQ's technical setup has improved markedly following Monday's volume-backed surge. The RSI crossing above 50, imminent MACD bullish crossover, OBV breakout, and double-bottom pattern all support the case for further upside. The key levels to watch are $520 (50-day SMA resistance) and $525 (June 4 high and 61.8% Fibonacci). A confirmed break above $520 would target $535-$545. The support zone at $505-$510 should hold on any pullback. The bullish case depends on sustained volume and a clean break above the 50-day SMA in the coming sessions. Traders should maintain a bullish bias but manage risk tightly at the $505 level, as a failure to hold support would invalidate the breakout and signal a return to the consolidation range.
