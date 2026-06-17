@@ -1,7 +1,7 @@
 ---
 title: "Law Firms Missing Calls — Royce AI Solution"
 date: 2026-06-17
-description: "Law firms miss 35% of inbound calls, losing $250K+ annually per practice. Royce AI's $1,000/mo AI answers 24/7, screens for conflicts, books consultations, and captures every case."
+description: "Law firms miss 35% of inbound calls, losing $250K+ annually. Royce AI's $1,000/mo AI answers 24/7, screens conflicts, books consultations, captures every case."
 ---
 
 Law firms operate in one of the most competitive and time-sensitive industries in the United States. When a potential client calls a law office, they are often in distress — facing a criminal charge, going through a divorce, dealing with a personal injury, or navigating a business dispute. These calls represent not just legal matters but life-altering events for the people on the other end of the line. Yet the 2026 ClaireAI Legal Intake Benchmark Report, which surveyed 1,000 U.S. law firms across all 50 states and analyzed 5,000+ inbound calls alongside 150,000+ telephony records, found that the average law firm misses 35% of inbound calls. The average annual revenue loss is $250,000 per firm. Aggregated across the U.S. legal industry, this represents a $44 billion revenue leak — and some estimates from the Heartland AI Missed Call Index place the figure as high as $109 billion when factoring in lost lifetime case value.

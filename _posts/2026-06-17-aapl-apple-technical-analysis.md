@@ -1,7 +1,7 @@
 ---
-title: "Apple AAPL Technical Analysis: $300 Breakout Tests All-Time Highs"
+title: "Apple AAPL Technical Analysis June 17 2026"
 date: 2026-06-17
-description: "AAPL breaks above $300 for the first time since May. RSI 48.8, MACD convergence, MA50 support at $295, resistance $315. WWDC 2026 drives AI optimism."
+description: "Apple (AAPL) breaks above $300 for the first time since May. RSI 48.8, MACD convergence, MA50 support at $295, resistance $315. WWDC 2026 drives AI optimism."
 categories: technical-analysis
 tags: [technical-analysis, aapl, apple]
 ---

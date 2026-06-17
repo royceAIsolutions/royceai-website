@@ -1,7 +1,7 @@
 ---
 title: "Insurance Agency Missed Calls Solved with Royce AI"
 date: 2026-06-17
-description: "Insurance agencies miss 38% of inbound calls, losing $4,500-$7,200 monthly per agency. Royce AI captures every lead 24/7 with AI receptionist for $1,000 per month."
+description: "Insurance agencies miss 38% of inbound calls, losing $4,500-$7,200 monthly. Royce AI captures every lead 24/7 with AI receptionist for just $1,000 per month."
 ---
 
 # Insurance Agency Missed Calls — How Royce AI Transforms Lead Capture for $1,000 Per Month
