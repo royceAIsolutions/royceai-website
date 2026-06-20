@@ -12,11 +12,13 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="flex: 1; min-width: 300px;">
 <h2>📰 Latest Articles</h2>
 <ul>
+{% assign count = 0 %}
 {% for post in site.posts %}
   {% unless post.tags contains "technical-analysis" %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+    {% assign count = count | plus: 1 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+    {% if count >= 9 %}{% break %}{% endif %}
   {% endunless %}
-  {% if forloop.index >= 9 %}{% break %}{% endif %}
 {% endfor %}
 </ul>
 </div>
@@ -24,11 +26,13 @@ Welcome to the official blog of Royce AI Solutions - AI Receptionists for Auto D
 <div style="flex: 1; min-width: 300px;">
 <h2>📊 Technical Analysis</h2>
 <ul>
+{% assign count = 0 %}
 {% for post in site.posts %}
   {% if post.tags contains "technical-analysis" %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+    {% assign count = count | plus: 1 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}</li>
+    {% if count >= 9 %}{% break %}{% endif %}
   {% endif %}
-  {% if forloop.index >= 9 %}{% break %}{% endif %}
 {% endfor %}
 </ul>
 </div>
