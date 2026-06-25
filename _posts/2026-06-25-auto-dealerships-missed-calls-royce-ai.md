@@ -1,6 +1,6 @@
 ---
 title: "Auto Dealerships Missing Calls - Royce AI Solution"
-date: 2026-06-24
+date: 2026-06-25
 description: "Auto dealerships miss 15-20% of calls daily losing thousands in revenue. Royce AI captures every lead 24/7 with multilingual support for 1000 dollars per month."
 ---
 
