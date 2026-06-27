@@ -1,7 +1,7 @@
 ---
 title: "Gold Bearish Trend Deepens Below $380 — XAUUSD Analysis"
 date: 2026-06-27
-description: "Gold extends decline to $373 as bearish momentum accelerates. RSI oversold, MACD histogram deepens, key support at $365 with Fibonacci targets lower."
+description: "Gold extends decline to $373 as bearish momentum accelerates. RSI oversold, MACD histogram deepens, key support at $365 with Fibonacci targets. Analysis."
 categories: technical-analysis
 tags: [technical-analysis]
 ---
