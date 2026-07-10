@@ -1,1 +1,147 @@
-...bitcoin content...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin BTCUSD Technical Analysis — Extreme Fear at $62K — RoyceAI Blog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        nav { max-width: 1100px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1a1a2e; }
+        .logo { font-size: 24px; font-weight: 800; color: #fff; letter-spacing: -0.5px; text-decoration: none; }
+        .logo span { color: #6366f1; }
+        .nav-links { display: flex; align-items: center; gap: 4px; }
+        nav a:not(.logo):not(.nav-btn) { color: #a0a0b0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; transition: color 0.2s, background 0.2s; }
+        nav a:not(.logo):not(.nav-btn):hover { color: #fff; background: rgba(255,255,255,0.04); }
+        nav a.active { color: #6366f1; background: rgba(99,102,241,0.08); }
+        .nav-btn { background: #6366f1; color: #fff !important; padding: 10px 20px !important; border-radius: 8px; margin-left: 8px; font-weight: 600 !important; }
+        .nav-btn:hover { background: #4f46e5; }
+        .post-header { padding: 60px 0 40px; }
+        .post-back { display: inline-flex; align-items: center; gap: 6px; color: #6366f1; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; transition: gap 0.2s; }
+        .post-back:hover { gap: 10px; }
+        .post-tag { display: inline-block; font-size: 11px; font-weight: 600; color: #6366f1; text-transform: uppercase; letter-spacing: 1px; background: rgba(99,102,241,0.1); padding: 4px 10px; border-radius: 20px; margin-bottom: 16px; }
+        .post-date { font-size: 14px; color: #6366f1; font-weight: 500; margin-bottom: 12px; }
+        .post-title { font-size: 40px; font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; }
+        .post-meta { display: flex; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid #1a1a2e; border-bottom: 1px solid #1a1a2e; margin-bottom: 40px; }
+        .post-author { display: flex; align-items: center; gap: 12px; }
+        .post-author-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #6366f1, #8b5cf6); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+        .post-author-name { font-size: 14px; font-weight: 600; color: #fff; }
+        .post-author-title { font-size: 12px; color: #888; }
+        .post-reading-time { font-size: 13px; color: #888; margin-left: auto; }
+        article { padding-bottom: 60px; }
+        article h1 { font-size: 32px; font-weight: 700; color: #fff; margin: 40px 0 16px; letter-spacing: -0.5px; }
+        article h2 { font-size: 28px; font-weight: 700; color: #fff; margin: 40px 0 16px; letter-spacing: -0.5px; }
+        article h3 { font-size: 22px; font-weight: 600; color: #fff; margin: 32px 0 12px; }
+        article p { font-size: 16px; color: #b0b0b8; margin-bottom: 20px; line-height: 1.8; }
+        article p:first-of-type { font-size: 18px; color: #d0d0d8; }
+        article ul, article ol { margin: 16px 0 24px; padding-left: 24px; }
+        article li { font-size: 16px; color: #b0b0b8; margin-bottom: 8px; line-height: 1.7; }
+        article li strong { color: #e0e0e0; }
+        article blockquote { border-left: 3px solid #6366f1; padding: 16px 20px; margin: 24px 0; background: rgba(99,102,241,0.04); border-radius: 0 8px 8px 0; }
+        article blockquote p { font-size: 16px; color: #ccc; font-style: italic; margin-bottom: 0; }
+        article hr { border: none; border-top: 1px solid #1a1a2e; margin: 40px 0; }
+        article code { background: rgba(99,102,241,0.1); padding: 2px 6px; border-radius: 4px; font-size: 14px; color: #a78bfa; }
+        .post-divider { height: 1px; background: #1a1a2e; margin: 0; }
+        .post-footer-nav { padding: 40px 0; border-top: 1px solid #111; }
+        .post-footer-nav a { color: #6366f1; text-decoration: none; font-weight: 500; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+        .post-footer-nav a:hover { gap: 10px; }
+        footer { padding: 48px 0; text-align: center; border-top: 1px solid #111; }
+        footer p { color: #555; font-size: 14px; }
+        footer a { color: #6366f1; text-decoration: none; }
+        @media (max-width: 768px) {
+            .post-title { font-size: 28px; }
+            article h2 { font-size: 22px; }
+            nav { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="/" class="logo">Royce<span>AI</span></a>
+    <div class="nav-links">
+        <a href="/#business">Business</a>
+        <a href="/#tutor">Tutor</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="mailto:royceaisolutions@gmail.com" class="nav-btn">Contact</a>
+    </div>
+</nav>
+<div class="container">
+    <header class="post-header">
+        <a href="/blog/" class="post-back">← Back to Blog</a>
+        <div>
+            <span class="post-tag">Technical Analysis</span>
+            <h1 class="post-title">Bitcoin BTCUSD Technical Analysis — Extreme Fear at $62K</h1>
+            <div class="post-meta">
+                <div class="post-author">
+                    <div class="post-author-avatar">R</div>
+                    <div>
+                        <div class="post-author-name">Royce Koh</div>
+                        <div class="post-author-title">Founder, RoyceAI</div>
+                    </div>
+                </div>
+                <span class="post-reading-time">July 9, 2026</span>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="post-divider"></div>
+<article class="container">
+<p>Bitcoin is trading at $62,730 as of July 9, 2026, showing relative stability after the sharp decline from the $80,000 level seen in early May. The current session shows a daily range of $61,898 to $63,255, with the market opening at $61,922 and pushing modestly higher. The Crypto Fear and Greed Index registered 21 on July 9, firmly in Extreme Fear territory, matching levels last seen during the June liquidity crisis when the index touched single digits. Total Bitcoin open interest stands at $91.8 billion with a 3.75 percent decline over the past seven days, indicating deleveraging continues across derivatives markets.</p>
+<h2>RSI Analysis</h2>
+<p>The daily Relative Strength Index reads approximately 35, positioning BTC in oversold territory. This marks the fourth consecutive week the daily RSI has remained below 40, an extended period of bearish momentum not observed since late 2024. The four-hour RSI shows a slightly higher reading around 39 with a subtle bullish divergence forming as price established higher lows while RSI printed higher lows over the past three trading sessions. This divergence pattern, while preliminary, suggests the selling pressure is exhausting at these levels.</p>
+<p>The weekly RSI has fallen below 40 for the first time since the August 2025 correction. Historically, weekly RSI readings below 30 have marked significant accumulation zones and major bottoms for Bitcoin. The current weekly reading near 36 leaves room for further downside but places BTC closer to historical support zones than resistance levels.</p>
+<h2>MACD Analysis</h2>
+<p>The daily MACD remains bearish with the MACD line at 125 below the signal line at 455, producing a negative histogram value of 330. The bearish alignment has persisted for 38 consecutive days, one of the longest such streaks in recent trading history. However, the histogram bars have been contracting since July 5, indicating the bearish momentum is slowing. A bullish crossover would require the MACD line to reclaim the signal line, which would need approximately two to three weeks of sideways to upward price action at current velocity.</p>
+<p>The weekly MACD turned bearish in mid-June when the MACD line crossed below the signal line for the first time since October 2025. The weekly histogram continues expanding to the downside, suggesting the primary trend remains bearish and that any near-term rallies should be treated as countertrend moves until the weekly indicator confirms a reversal.</p>
+<h2>Moving Averages</h2>
+<p>Bitcoin is trading below all major simple moving averages across daily and weekly timeframes. The 20-day SMA sits at $64,300, serving as immediate overhead resistance. BTC must reclaim this level to signal the first sign of short-term trend improvement. The 50-day SMA at $67,800 represents the next significant barrier, and price has not traded above this level since June 12.</p>
+<p>The 100-day SMA is positioned at $71,200, while the 200-day SMA, the most widely followed long-term trend indicator, rests at $73,500. Bitcoin at $62,730 trades approximately 15 percent below the 200-day SMA, confirming a bearish long-term trend structure. For comparison, the 200-day SMA was at $76,800 when BTC was trading near $80,000 in early May. The rapid decline has created a significant gap between price and the long-term average.</p>
+<p>The EMA structure shows the 12-day EMA at $63,900 firmly below the 26-day EMA at $65,100, confirming the bearish short-term alignment. A bullish EMA crossover, often called the golden cross on shorter timeframes, would require BTC to climb above $64,500 and sustain, which appears unlikely without a broader market catalyst.</p>
+<h2>Volume Analysis</h2>
+<p>Trading volume over the past five sessions has averaged approximately 1.5 million BTC in spot market turnover, below the 30-day average of 2.1 million. Volume contraction during the current consolidation phase suggests sellers are becoming less aggressive after the June capitulation event that saw volume spike to over 6.3 million on June 5. Declining volume during a sideways consolidation following a sharp sell-off is a pattern sometimes associated with bottom formation.</p>
+<p>On Balance Volume (OBV) has flattened over the past seven sessions after declining sharply throughout June. The stabilization of OBV while price holds near $62,000 is a mildly constructive signal, indicating that distribution pressure has eased. However, OBV remains well below its May highs, and a sustained uptick in the indicator would be needed to confirm accumulation is occurring.</p>
+<h2>Support and Resistance Levels</h2>
+<p>Support levels on the downside are well-defined. The first major support sits at $60,000, a psychologically significant round number that has been tested three times in the past two weeks. A breakdown below $60,000 opens the door to the June 25 low at $58,410, which represents the session low during the height of the liquidation cascade. Below that, support exists at $56,000, followed by the critical $52,000 zone that held during the August 2025 correction.</p>
+<p>Resistance levels are stacked in a clear hierarchy. The first hurdle is $64,300, coinciding with the 20-day SMA. Above that, resistance at $66,500 represents the July 1 swing high. The $68,000 to $69,000 zone marks the 50-day SMA area and the June 10 peak. The most significant resistance lies at $73,500, the 200-day SMA, which would need to be reclaimed for a full trend reversal confirmation.</p>
+<h2>Chart Patterns</h2>
+<p>The daily chart shows a potential descending broadening wedge forming since early June. This pattern features expanding price swings within converging trend lines and typically resolves with an upside breakout in approximately 65 to 70 percent of cases. The upper boundary of the wedge currently intersects near $66,000, while the lower boundary aligns with the $58,400 to $60,000 support zone. A breakout above $66,000 would target a measured move to approximately $74,000.</p>
+<p>If the wedge breaks downward instead, the measured move target extends to approximately $50,000, representing a 14 percent decline from current levels. The wedge is approximately 80 percent complete based on time projections, suggesting a resolution within the next five to ten trading sessions.</p>
+<h2>Fibonacci Retracement</h2>
+<p>Applying Fibonacci retracement from the May 1 high of $81,060 to the June 25 low of $58,410, Bitcoin is currently testing the 23.6 percent retracement level at $63,900. A sustained move above this level opens the path to the 38.2 percent retracement at $67,000 and the 50 percent level at $70,200.</p>
+<p>The 61.8 percent retracement at $72,500 is the most significant Fibonacci level, often acting as the dividing line between a countertrend rally and a full trend reversal. BTC must reclaim this level for the broader uptrend to resume. The current position near the 23.6 percent retracement highlights the weakness of the recent bounce.</p>
+<h2>Bollinger Bands</h2>
+<p>The daily Bollinger Bands show a band width of approximately 10 percent, narrowing from the 18 percent width observed during the June volatility spike. The contraction of the bands after a period of high volatility often precedes a significant directional move. Price is trading in the lower half of the band range, with the lower band at $58,800 and the upper band at $67,700. A move above the band midpoint at $63,250 would be the first constructive signal from this indicator.</p>
+<h2>Ichimoku Cloud</h2>
+<p>The daily Ichimoku setup is firmly bearish. Price is trading well below the cloud, which spans from $66,500 to $72,000 for the current period. The Tenkan-sen (conversion line) at $63,500 has crossed below the Kijun-sen (base line) at $64,800, confirming the bearish signal. The Chikou Span (lagging span) is positioned below price from 26 periods ago, further confirming the bearish structure. The cloud itself is turning red for the next 26 periods, indicating that resistance levels are expected to strengthen rather than weaken in the coming weeks.</p>
+<h2>Elliott Wave Analysis</h2>
+<p>The preferred wave count suggests Bitcoin completed Wave A of a larger ABC correction pattern during the June 25 low at $58,410. The bounce to $66,500 on July 1 represents Wave B, which has been followed by Wave C decline that is potentially still developing. The target for a completed Wave C would be between $55,000 and $57,000, representing a 1.0 to 1.272 extension of Wave A.</p>
+<p>An alternative count suggests the entire decline from $81,060 to $58,410 completed a larger Wave 1 of a five-wave impulse, with the current price action representing Wave 2 retracement. This interpretation requires a retracement above $66,500 to be valid and would target significantly higher prices in Waves 3 through 5 into late 2026.</p>
+<h2>Market Sentiment</h2>
+<p>The Fear and Greed Index at 21 represents Extreme Fear, the lowest reading since the June nadir when the index touched 9. The 90-day trajectory shows a steady decline from neutral levels near 50 in mid-May to the current extreme fear zone, reflecting the cumulative impact of persistent ETF outflows, regulatory uncertainty, and broader macroeconomic headwinds.</p>
+<p>BTC ETF flows tell a cautionary story. Over the past 19 trading days, spot Bitcoin ETFs have experienced net outflows totaling approximately $2.5 billion, with only 5 positive flow days versus 14 negative. The IBIT fund alone has seen over $148 million in outflows on the most recent data day. However, the most recent three days show improving flow patterns, with net positive flows of $85.9 million on the most recent positive day, suggesting institutional selling may be abating.</p>
+<p>Funding rates across Bitcoin perpetual futures remain near neutral at 0.005 percent, indicating that leveraged positioning is balanced between longs and shorts. This contrasts with the elevated funding rates seen during the May highs, when long positioning was excessively crowded. Neutral funding rates during a period of extreme fear often precede trend reversions.</p>
+<h2>Trading Recommendations</h2>
+<p>The overall bias for Bitcoin is bearish in the short term with the potential for a trend reversal developing over the next one to two weeks. The descending broadening wedge, RSI bullish divergence, and contracting Bollinger Bands all suggest that a breakout move is approaching, but the direction of that breakout remains uncertain.</p>
+<p>For aggressive traders, a long position near $60,000 with a stop at $57,800 and a target of $66,000 offers a favorable risk-to-reward ratio of approximately 1 to 3.6. A break above $66,000 would confirm the bullish scenario with a measured move target of $74,000. Conservative traders should wait for a confirmed breakout above $64,300 or a retest of the $58,400 support before establishing positions.</p>
+<p>For bearish positioning, a breakdown below $58,400 would confirm continued downside with a target of $54,000. A short entry on a close below $60,000 with a stop at $61,500 and a target of $55,000 provides a similar risk-to-reward profile.</p>
+<h2>Risk Factors</h2>
+<p>The primary risk to the bearish thesis is a sudden macro catalyst that drives a risk-on shift across all markets. A favorable CPI print, a surprise Fed pivot, or a major institutional adoption announcement could trigger a rapid short squeeze given the extreme fear positioning. The second risk is the descending broadening wedge setup, which has a statistical tendency toward upside resolution.</p>
+<p>The primary risk to the bullish thesis is continued ETF outflows and exchange inflows, which would indicate persistent distribution by large holders. Additionally, the weekly MACD continues to deteriorate, and any breakdown below $58,400 would invalidate the wedge pattern and likely trigger a cascade of stop-loss orders.</p>
+<h2>Conclusion</h2>
+<p>Bitcoin at $62,730 presents a complex technical picture with competing signals. The medium-term trend is bearish based on moving average alignment, MACD positioning, Ichimoku cloud structure, and Elliott Wave count. However, the short-term setup shows potential for a reversal based on RSI oversold conditions, the descending broadening wedge pattern, bullish divergence signals, and extreme fear sentiment readings.</p>
+<p>The converging technical signals suggest a significant move is approaching within the next two weeks. Whether that move is higher toward $66,000 and $74,000 or lower toward $55,000 and $50,000 will depend on whether support at $60,000 and $58,400 holds. Until a confirmed breakout occurs, the prudent approach is to wait for confirmation from the market rather than anticipating direction.</p>
+    <hr>
+    <div class="post-footer-nav">
+        <a href="/blog/">← Back to all posts</a>
+    </div>
+</article>
+<footer>
+    <p style="color:#888;">RoyceAI — <a href="mailto:royceaisolutions@gmail.com" style="color:#6366f1;">royceaisolutions@gmail.com</a></p>
+    <p style="color:#555; font-size:13px; margin-top:8px;">One person. One AI. Everything a corporation can do.</p>
+</footer>
+</body>
+</html>
