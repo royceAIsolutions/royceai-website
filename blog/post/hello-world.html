@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World — RoyceAI is Live — RoyceAI Blog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        nav { max-width: 1100px; margin: 0 auto; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1a1a2e; }
+        .logo { font-size: 24px; font-weight: 800; color: #fff; letter-spacing: -0.5px; text-decoration: none; }
+        .logo span { color: #6366f1; }
+        .nav-links { display: flex; align-items: center; gap: 4px; }
+        nav a:not(.logo):not(.nav-btn) { color: #a0a0b0; text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; transition: color 0.2s, background 0.2s; }
+        nav a:not(.logo):not(.nav-btn):hover { color: #fff; background: rgba(255,255,255,0.04); }
+        nav a.active { color: #6366f1; background: rgba(99,102,241,0.08); }
+        .nav-btn { background: #6366f1; color: #fff !important; padding: 10px 20px !important; border-radius: 8px; margin-left: 8px; font-weight: 600 !important; }
+        .nav-btn:hover { background: #4f46e5; }
+        .post-header { padding: 60px 0 40px; }
+        .post-back { display: inline-flex; align-items: center; gap: 6px; color: #6366f1; text-decoration: none; font-size: 14px; font-weight: 500; margin-bottom: 24px; transition: gap 0.2s; }
+        .post-back:hover { gap: 10px; }
+        .post-tag { display: inline-block; font-size: 11px; font-weight: 600; color: #6366f1; text-transform: uppercase; letter-spacing: 1px; background: rgba(99,102,241,0.1); padding: 4px 10px; border-radius: 20px; margin-bottom: 16px; }
+        .post-date { font-size: 14px; color: #6366f1; font-weight: 500; margin-bottom: 12px; }
+        .post-title { font-size: 40px; font-weight: 800; color: #fff; line-height: 1.15; letter-spacing: -1px; margin-bottom: 20px; }
+        .post-meta { display: flex; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid #1a1a2e; border-bottom: 1px solid #1a1a2e; margin-bottom: 40px; }
+        .post-author { display: flex; align-items: center; gap: 12px; }
+        .post-author-avatar { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #6366f1, #8b5cf6); display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: #fff; }
+        .post-author-name { font-size: 14px; font-weight: 600; color: #fff; }
+        .post-author-title { font-size: 12px; color: #888; }
+        .post-reading-time { font-size: 13px; color: #888; margin-left: auto; }
+        article { padding-bottom: 60px; }
+        article h2 { font-size: 28px; font-weight: 700; color: #fff; margin: 40px 0 16px; letter-spacing: -0.5px; }
+        article h3 { font-size: 22px; font-weight: 600; color: #fff; margin: 32px 0 12px; }
+        article p { font-size: 16px; color: #b0b0b8; margin-bottom: 20px; line-height: 1.8; }
+        article p:first-of-type { font-size: 18px; color: #d0d0d8; }
+        article ul, article ol { margin: 16px 0 24px; padding-left: 24px; }
+        article li { font-size: 16px; color: #b0b0b8; margin-bottom: 8px; line-height: 1.7; }
+        article li strong { color: #e0e0e0; }
+        article blockquote { border-left: 3px solid #6366f1; padding: 16px 20px; margin: 24px 0; background: rgba(99,102,241,0.04); border-radius: 0 8px 8px 0; }
+        article blockquote p { font-size: 16px; color: #ccc; font-style: italic; margin-bottom: 0; }
+        article hr { border: none; border-top: 1px solid #1a1a2e; margin: 40px 0; }
+        .post-divider { height: 1px; background: #1a1a2e; margin: 0; }
+        .post-footer-nav { padding: 40px 0; border-top: 1px solid #111; }
+        .post-footer-nav a { color: #6366f1; text-decoration: none; font-weight: 500; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+        .post-footer-nav a:hover { gap: 10px; }
+        footer { padding: 48px 0; text-align: center; border-top: 1px solid #111; }
+        footer p { color: #555; font-size: 14px; }
+        footer a { color: #6366f1; text-decoration: none; }
+        @media (max-width: 768px) {
+            .post-title { font-size: 28px; }
+            article h2 { font-size: 22px; }
+            nav { flex-direction: column; gap: 12px; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="/" class="logo">Royce<span>AI</span></a>
+    <div class="nav-links">
+        <a href="/#business">Business</a>
+        <a href="/#tutor">Tutor</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="mailto:royceaisolutions@gmail.com" class="nav-btn">Contact</a>
+    </div>
+</nav>
+<div class="container">
+    <header class="post-header">
+        <a href="/blog/" class="post-back">← Back to Blog</a>
+        <div>
+            <span class="post-tag">Launch</span>
+            <h1 class="post-title">Hello World — RoyceAI is Live</h1>
+            <div class="post-meta">
+                <div class="post-author">
+                    <div class="post-author-avatar">R</div>
+                    <div>
+                        <div class="post-author-name">Royce Koh</div>
+                        <div class="post-author-title">Founder, RoyceAI</div>
+                    </div>
+                </div>
+                <span class="post-reading-time">July 9, 2026 · 4 min read</span>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="post-divider"></div>
+<article class="container">
+    <p>Today, I'm excited to announce the launch of <strong>RoyceAI</strong> — an autonomous AI operations agent that handles your business's inbound calls, texts, emails, and lead nurturing entirely on its own. No humans in the loop. No missed follow-ups. No leads falling through the cracks.</p>
+
+    <h2>The Problem</h2>
+    <p>Every business with a phone number or email address is drowning in inbound communication. Missed calls go to voicemail. Voicemails never get returned. Emails pile up. Leads sit for days. By the time you get back to someone, they've already moved on to a competitor who answered.</p>
+    <p>The numbers are brutal:</p>
+    <ul>
+        <li><strong>78%</strong> of customers choose the first business that responds — speed is everything.</li>
+        <li><strong>55%</strong> of leads are never followed up with at all.</li>
+        <li>The average small business misses <strong>40+ calls per week</strong> during off-hours.</li>
+    </ul>
+    <p>Most businesses can't afford a 24/7 receptionist. But every business can afford an AI that works for pennies per interaction.</p>
+
+    <h2>What RoyceAI Does</h2>
+    <p>RoyceAI answers every inbound call — day or night, weekend or holiday. It speaks naturally, qualifies leads using your criteria (BANT or custom), schedules meetings, and logs every interaction to your CRM. It also handles SMS and email, following up on the channel your lead prefers.</p>
+    <p>Behind the scenes, RoyceAI runs persistent, multi-step nurture sequences. If a lead doesn't respond to SMS in 3 days, it follows up by email. If there's still no response, it calls. The system never forgets, never gets tired, and never drops a ball.</p>
+
+    <blockquote>
+        <p>"Grant Cardone said on camera that he wants an AI receptionist. RoyceAI already is exactly that."</p>
+    </blockquote>
+
+    <h2>Why Now</h2>
+    <p>We've reached an inflection point in AI voice technology. Models are natural enough that callers can't tell they're talking to an AI — and more importantly, they don't care, because their problem gets solved instantly. The tech stack has matured: voice synthesis is indistinguishable from human speech, language models handle complex conversations reliably, and integration APIs connect to every major CRM and calendar system.</p>
+    <p>RoyceAI sits at this intersection. It's not a demo or a prototype. It's a live system handling real calls on a real phone number, right now.</p>
+
+    <h2>What's Next</h2>
+    <p>This first post is just the beginning. In the coming weeks, I'll be sharing more about:</p>
+    <ul>
+        <li><strong>How RoyceAI works</strong> — The architecture behind the agent</li>
+        <li><strong>Real metrics</strong> — Calls handled, leads qualified, revenue generated</li>
+        <li><strong>Industry deep dives</strong> — How RoyceAI applies to auto dealerships, medical practices, real estate, and more</li>
+        <li><strong>Behind the scenes</strong> — Building a solo AI startup in 2026</li>
+    </ul>
+
+    <h2>Call to Action</h2>
+    <p>RoyceAI is live today. You can call <strong>+1 (719) 771-1725</strong> right now and talk to the AI. It will answer, qualify you as a lead, and either answer your questions or book a meeting with me — all without me touching the phone.</p>
+    <p>If you're a business owner tired of missing leads, or an investor who sees where this is going, reach out: <a href="mailto:royceaisolutions@gmail.com" style="color:#6366f1; text-decoration:none; font-weight:500;">royceaisolutions@gmail.com</a>.</p>
+    <p>One person. One AI. Everything a corporation can do.</p>
+
+    <hr>
+
+    <div class="post-footer-nav">
+        <a href="/blog/">← Back to all posts</a>
+    </div>
+</article>
+<footer>
+    <p style="color:#888;">RoyceAI — <a href="mailto:royceaisolutions@gmail.com" style="color:#6366f1;">royceaisolutions@gmail.com</a></p>
+    <p style="color:#555; font-size:13px; margin-top:8px;">One person. One AI. Everything a corporation can do.</p>
+</footer>
+</body>
+</html>
