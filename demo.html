@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try RoyceAI — Free 24-Hour Demo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.6;min-height:100vh;display:flex;justify-content:center;align-items:center}
+        .card{background:#111118;border:1px solid #1a1a2e;border-radius:16px;padding:48px;max-width:480px;width:100%;margin:20px}
+        h1{color:#fff;font-size:28px;margin-bottom:8px}
+        .logo{font-size:20px;font-weight:800;color:#fff;margin-bottom:32px}
+        .logo span{color:#6366f1}
+        p{color:#888;font-size:14px;margin-bottom:24px}
+        label{display:block;font-size:13px;color:#aaa;margin-bottom:4px;margin-top:16px}
+        input,select{width:100%;padding:12px 16px;border-radius:8px;border:1px solid #2a2a2e;background:#0a0a0f;color:#fff;font-size:14px;box-sizing:border-box;transition:0.2s}
+        input:focus,select:focus{border-color:#6366f1;outline:none}
+        button{background:#6366f1;color:#fff;border:none;padding:14px 24px;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;margin-top:24px;width:100%;transition:0.2s}
+        button:hover{background:#4f46e5}
+        button:disabled{opacity:0.5;cursor:not-allowed}
+        .success{color:#34d399;text-align:center;padding:20px}
+        .success a{color:#6366f1;text-decoration:none;font-weight:600}
+        .error{color:#ef4444;text-align:center;padding:20px}
+        .back{text-align:center;margin-top:20px}
+        .back a{color:#6366f1;text-decoration:none;font-size:14px}
+        .steps{display:flex;gap:12px;margin-bottom:32px}
+        .step{flex:1;text-align:center;padding:12px;border-radius:8px;background:#0a0a0f;font-size:12px;color:#555}
+        .step.active{background:#111127;border:1px solid #6366f1;color:#6366f1}
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="logo">Royce<span>AI</span></div>
+    <h1>Try RoyceAI</h1>
+    <p>We'll create a private Telegram group and add you. 24-hour live demo, no commitment.</p>
+    
+    <div class="steps">
+        <div class="step active">1. Fill form</div>
+        <div class="step">2. Group created</div>
+        <div class="step">3. Test live</div>
+    </div>
+
+    <form id="demoForm">
+        <label>Your Name</label>
+        <input type="text" id="name" required placeholder="e.g. John Smith">
+        
+        <label>Telegram Handle or Phone</label>
+        <input type="text" id="contact" required placeholder="@username or +1 (555) 000-0000">
+        
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="you@example.com">
+        
+        <label>Best Contact Method</label>
+        <select id="contact_method">
+            <option value="telegram">Telegram</option>
+            <option value="voice">Phone Call</option>
+            <option value="email">Email</option>
+        </select>
+        
+        <button type="submit" id="submitBtn">Start My Demo →</button>
+    </form>
+    <div id="result"></div>
+    <div class="back"><a href="/">← Back to RoyceAI</a></div>
+</div>
+
+<script>
+const DEMO_API = 'https://hundred-important-nations-pickup.trycloudflare.com/demo';
+document.getElementById('demoForm').onsubmit = async function(e){
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Setting up your demo...';
+    document.getElementById('result').innerHTML = '';
+    try {
+        const r = await fetch(DEMO_API, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                name: document.getElementById('name').value,
+                contact: document.getElementById('contact').value,
+                email: document.getElementById('email').value,
+                contact_method: document.getElementById('contact_method').value
+            })
+        });
+        const d = await r.json();
+        if (d.ok) {
+            document.getElementById('result').innerHTML = 
+                '<div class="success">✅ Demo group created!<br><br>' +
+                '<a href="'+d.invite_link+'" target="_blank" style="display:inline-block;background:#6366f1;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600">Join Your Group</a>' +
+                '<br><br>Check your Telegram app. The group expires in 24 hours.</div>';
+            document.getElementById('demoForm').style.display = 'none';
+        } else {
+            document.getElementById('result').innerHTML = '<div class="error">❌ ' + d.error + '</div>';
+        }
+    } catch(e) {
+        document.getElementById('result').innerHTML = '<div class="error">❌ Could not connect. Email us at royceaisolutions@gmail.com</div>';
+    }
+    btn.disabled = false;
+    btn.textContent = 'Start My Demo →';
+};
+</script>
+</body>
+</html>
