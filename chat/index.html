@@ -97,7 +97,7 @@ body {
       <br><br>
       • <b>AI Receptionists</b> — 24/7 call answering for dealerships, medical, dental, vets<br>
       • <b>Tutoring</b> — K-12 Math, Science, English, Korean via RoyceAI Tutor<br>
-      • <b>Cuisine Quiz</b> — Test your food knowledge → <a href='cuisine-game'>Take the quiz</a><br>
+      • <b>Cuisine Quiz</b> — Test your food knowledge<br>
       <br>
       What can I help you with?
     </div>
@@ -174,10 +174,7 @@ async function sendMessage() {
     const resp = await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: text,
-        history: history.slice(-20)
-      }),
+      body: JSON.stringify({ message: text, history: history.slice(-20) }),
     });
 
     const data = await resp.json();
