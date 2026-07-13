@@ -86,4 +86,18 @@ AI Receptionists for Auto Dealerships & Medical Practices — and now, AI Tutori
 We build AI receptionists that never miss a call — and now, AI tutors that never get tired. Serving auto dealerships, medical practices, dental offices, veterinary clinics, real estate agencies, law firms, insurance agencies, financial services, home services, restaurants, hotels, e-commerce businesses, tutoring centers, and ANY business needing 24/7 multilingual AI in Orange County and beyond.
 
 **Ready for AI?**
-Visit: [royceai.com](https://royceai.com) | [Start Tutoring →](https://t.me/royceai_bot)
+Visit: [royceai.com](https://royceai.com) | [Start Tutoring →](https://t.me/royceai_bot) | [💬 Live Chat](/chat)
+
+
+<!-- Floating Chat Button -->
+<div style="position: fixed; bottom: 24px; right: 24px; z-index: 9999; display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
+  <div style="background: white; padding: 8px 14px; border-radius: 12px; font-size: 0.8em; color: #636e72; box-shadow: 0 2px 10px rgba(0,0,0,0.1); opacity: 0; transition: opacity 0.5s;" id="chatTooltip">💬 Chat with RoyceAI</div>
+  <a href="/chat" style="
+    width: 60px; height: 60px; border-radius: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; text-decoration: none; display: flex; align-items: center; justify-content: center;
+    font-size: 28px; box-shadow: 0 4px 20px rgba(102,126,234,0.4);
+    transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">💬</a>
+</div>
+<script>setTimeout(()=>{document.getElementById('chatTooltip').style.opacity='1';setTimeout(()=>{document.getElementById('chatTooltip').style.opacity='0'},4000)},2000)</script>
