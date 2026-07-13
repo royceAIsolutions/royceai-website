@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍽️ Cuisine IQ Test — What Grade Is Your Food Knowledge?</title>
+<meta name="description" content="10 food questions. Determine your grade level. Most adults score below 5th grade. Can you beat a 4th grader?">
+<meta property="og:title" content="🍽️ Cuisine IQ Test — What Grade Is Your Food Knowledge?">
+<meta property="og:description" content="10 food questions. Most adults score below 5th grade. Think you know food?">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  h1 { font-size: 2em; margin-bottom: 10px; color: #2d3436; }
+  .subtitle { color: #636e72; margin-bottom: 30px; font-size: 1.1em; }
+  .grade-badge {
+    display: inline-block;
+    background: #ff6b6b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .question { font-size: 1.3em; font-weight: 600; margin-bottom: 20px; color: #2d3436; min-height: 3em; }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 1.05em;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: left;
+  }
+  .option:hover { background: #e9ecef; transform: translateY(-1px); }
+  .option.selected { border-color: #ff6b6b; background: #fff5f5; }
+  .option.correct { border-color: #00b894; background: #e6fff8; }
+  .option.wrong { border-color: #ff6b6b; background: #fff0f0; }
+  .option:disabled { cursor: default; opacity: 0.9; }
+  .progress { display: flex; gap: 6px; margin-bottom: 25px; }
+  .dot {
+    width: 32px; height: 8px; border-radius: 4px;
+    background: #e9ecef; flex: 1;
+    transition: background 0.3s;
+  }
+  .dot.answered { background: #00b894; }
+  .dot.wrong-dot { background: #ff6b6b; }
+  .dot.current { background: #ff6b6b; }
+  .controls { display: flex; justify-content: space-between; margin-top: 25px; }
+  button {
+    background: #ff6b6b; color: white; border: none;
+    padding: 12px 28px; border-radius: 10px; font-size: 1em;
+    font-weight: 600; cursor: pointer; transition: background 0.2s;
+  }
+  button:hover { background: #ee5a24; }
+  button:disabled { background: #b2bec3; cursor: not-allowed; }
+  .result { text-align: center; }
+  .result h2 { font-size: 2.2em; margin-bottom: 10px; color: #2d3436; }
+  .grade-display { font-size: 4em; margin: 20px 0; }
+  .score-text { font-size: 1.2em; color: #636e72; margin-bottom: 20px; }
+  .share-text { 
+    background: #fff3e0; padding: 20px; border-radius: 12px;
+    margin: 20px 0; font-size: 1em; line-height: 1.5;
+    border-left: 4px solid #ff6b6b;
+  }
+  .share-buttons { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .share-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 20px; border-radius: 10px; color: white;
+    font-weight: 600; text-decoration: none; font-size: 0.9em;
+  }
+  .twitter-btn { background: #1da1f2; }
+  .tutor-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white; padding: 16px 32px; border-radius: 12px;
+    font-weight: bold; text-decoration: none; font-size: 1.1em;
+    margin-top: 15px;
+  }
+  .floating-emoji { font-size: 3em; margin-bottom: 15px; }
+  .timestamp { color: #b2bec3; font-size: 0.8em; margin-top: 30px; }
+  .retry-btn {
+    background: #2d3436; margin-top: 15px;
+  }
+  .hide { display: none; }
+  .replay { margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="container" id="app">
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <div style="text-align: center; font-size: 4em; margin-bottom: 10px;">🍽️</div>
+    <h1 style="text-align: center;">What Grade Is Your<br>Food Knowledge?</h1>
+    <p class="subtitle" style="text-align: center;">
+      You answer 10 questions. We determine your grade level.<br>
+      <strong>⚠️ Warning:</strong> 80% of adults score below 5th grade.<br>
+      4th graders regularly beat their parents.
+    </p>
+    <div style="text-align: center; margin: 30px 0;">
+      <button onclick="startGame()" style="font-size: 1.2em; padding: 16px 40px;">
+        🔥 Start the Quiz
+      </button>
+      <p style="color: #b2bec3; margin-top: 10px; font-size: 0.85em;">
+        ~3 minutes • 10 questions • Multiple choice
+      </p>
+    </div>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div id="quiz-screen" class="hide">
+    <div class="progress" id="progress"></div>
+    <div class="grade-badge" id="grade-label">Kindergarten</div>
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <div class="controls">
+      <span id="counter" style="color: #636e72;">Question 1/10</span>
+      <button id="next-btn" onclick="nextQuestion()" disabled>Next →</button>
+    </div>
+  </div>
+
+  <!-- Result Screen -->
+  <div id="result-screen" class="hide">
+    <div class="result">
+      <div id="result-emoji" class="floating-emoji"></div>
+      <h2 id="result-title"></h2>
+      <div class="grade-display" id="result-grade"></div>
+      <div class="score-text" id="result-score"></div>
+      <div class="share-text" id="result-message"></div>
+      <div class="share-buttons">
+        <a id="tweet-btn" class="share-btn twitter-btn" target="_blank">
+          🐦 Share on X
+        </a>
+      </div>
+      <div>
+        <button onclick="location.reload()" class="retry-btn">🔄 Try Again</button>
+      </div>
+      <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #e9ecef;">
+        <p style="color: #636e72; margin-bottom: 10px;">📚 Want to actually improve your child's grades?</p>
+        <a href="https://t.me/royceai_bot" class="tutor-btn">Try RoyceAI Tutor Free →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const QUESTIONS = [
+  {
+    question: "What color is a ripe banana?",
+    options: ["Green", "Yellow", "Red", "Blue"],
+    answer: 1,
+    grade: "Kindergarten",
+    icon: "🍌"
+  },
+  {
+    question: "Pizza originally comes from which country?",
+    options: ["France", "United States", "Italy", "China"],
+    answer: 2,
+    grade: "1st Grade",
+    icon: "🍕"
+  },
+  {
+    question: "Which of these is a FRUIT, not a vegetable?",
+    options: ["Broccoli", "Carrot", "Tomato", "Lettuce"],
+    answer: 2,
+    grade: "2nd Grade",
+    icon: "🍅"
+  },
+  {
+    question: "What is the main ingredient in guacamole?",
+    options: ["Tomato", "Avocado", "Lime", "Onion"],
+    answer: 1,
+    grade: "3rd Grade",
+    icon: "🥑"
+  },
+  {
+    question: "Sushi is traditionally wrapped in what seaweed?",
+    options: ["Kombu", "Nori", "Wakame", "Dulse"],
+    answer: 1,
+    grade: "4th Grade",
+    icon: "🍣"
+  },
+  {
+    question: "Which cooking method cooks food using steam from boiling water?",
+    options: ["Roasting", "Grilling", "Steaming", "Frying"],
+    answer: 2,
+    grade: "5th Grade",
+    icon: "🥟"
+  },
+  {
+    question: "What gives chili peppers their heat?",
+    options: ["Capsaicin", "Curcumin", "Tannin", "Gluten"],
+    answer: 0,
+    grade: "6th Grade",
+    icon: "🌶️"
+  },
+  {
+    question: "Maillard reaction occurs when you do what to food?",
+    options: ["Freeze it", "Boil it", "Brown/sear it", "Salt it"],
+    answer: 2,
+    grade: "8th Grade",
+    icon: "🥩"
+  },
+  {
+    question: "Confit is a French technique of cooking meat in what?",
+    options: ["Water", "Wine", "Its own rendered fat", "Butter"],
+    answer: 2,
+    grade: "10th Grade",
+    icon: "🦆"
+  },
+  {
+    question: "Sous-vide cooking involves vacuum-sealing food and cooking it in what?",
+    options: ["A pressure cooker", "A water bath at precise temperature", "A slow cooker", "A microwave"],
+    answer: 1,
+    grade: "College Level",
+    icon: "🥘"
+  }
+];
+
+const GRADE_LEVELS = [
+  { min: 10, title: "🗣️ Household Chef", emoji: "👨‍🍳", msg: "You belong in a professional kitchen. Seriously, why aren't you on Food Network?", grade: "CHEF 👨‍🍳" },
+  { min: 9, title: "🎓 Post-Grad Food Scientist", emoji: "🧪", msg: "You know more about food than most adults know about anything. We're impressed.", grade: "COLLEGE+" },
+  { min: 8, title: "🎒 High School Foodie", emoji: "📚", msg: "You know your way around a kitchen. Top 10% of adults.", grade: "11th Grade" },
+  { min: 7, title: "📖 Middle School Menu Master", emoji: "🍳", msg: "Solid knowledge. You can cook dinner without a recipe. Most adults can't.", grade: "7th Grade" },
+  { min: 5, title: "🚸 5th Grade Lunch Table", emoji: "🧃", msg: "You passed elementary. That's more than most adults who took this.", grade: "5th Grade" },
+  { min: 4, title: "🧸 3rd Grade Snack Time", emoji: "🍪", msg: "You know the basics. A 4th grader would beat you. Embarrassing!", grade: "3rd Grade" },
+  { min: 2, title: "🍼 Kindergarten Plate", emoji: "🥣", msg: "You need supervision in a kitchen. Stick to cereal.", grade: "Kindergarten" },
+  { min: 0, title: "🍼 Baby Food Only", emoji: "👶", msg: "Did you just guess? A toddler knows more about food than you.", grade: "Worse than Kindergarten" },
+];
+
+let currentQ = 0;
+let answers = [];
+let gameOver = false;
+
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Shuffle questions
+const shuffled = shuffleArray([...QUESTIONS]);
+
+function startGame() {
+  document.getElementById('start-screen').classList.add('hide');
+  document.getElementById('quiz-screen').classList.remove('hide');
+  currentQ = 0;
+  answers = new Array(shuffled.length).fill(null);
+  renderProgress();
+  renderQuestion();
+}
+
+function renderProgress() {
+  const p = document.getElementById('progress');
+  p.innerHTML = '';
+  shuffled.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    if (answers[i] !== null) {
+      dot.classList.add(answers[i] === shuffled[i].answer ? 'answered' : 'wrong-dot');
+    }
+    if (i === currentQ) dot.classList.add('current');
+    dot.dataset.index = i;
+    p.appendChild(dot);
+  });
+}
+
+function renderQuestion() {
+  const q = shuffled[currentQ];
+  document.getElementById('grade-label').textContent = q.icon + ' ' + q.grade;
+  document.getElementById('question').innerHTML = q.question;
+  document.getElementById('counter').textContent = `Question ${currentQ + 1}/${shuffled.length}`;
+
+  const optDiv = document.getElementById('options');
+  optDiv.innerHTML = '';
+  
+  const labels = ['A', 'B', 'C', 'D'];
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('div');
+    btn.className = 'option';
+    btn.textContent = labels[i] + '. ' + opt;
+    btn.dataset.index = i;
+    
+    if (answers[currentQ] !== null) {
+      const answered = answers[currentQ];
+      btn.classList.add(i === answered ? (answered === q.answer ? 'correct' : 'wrong') : '');
+      if (i === q.answer) btn.classList.add('correct');
+      btn.style.cursor = 'default';
+    } else {
+      btn.onclick = () => selectOption(i);
+    }
+    
+    optDiv.appendChild(btn);
+  });
+
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.disabled = answers[currentQ] === null;
+  if (currentQ === shuffled.length - 1) {
+    nextBtn.textContent = '📊 See Results';
+  } else {
+    nextBtn.textContent = 'Next →';
+  }
+  
+  renderProgress();
+}
+
+function selectOption(idx) {
+  if (answers[currentQ] !== null) return;
+  
+  const q = shuffled[currentQ];
+  answers[currentQ] = idx;
+  
+  // Show all options as correct/wrong
+  const optDiv = document.getElementById('options');
+  const children = optDiv.children;
+  for (let i = 0; i < children.length; i++) {
+    children[i].classList.add(i === idx ? (idx === q.answer ? 'correct' : 'wrong') : '');
+    if (i === q.answer) children[i].classList.add('correct');
+    children[i].style.cursor = 'default';
+  }
+  // Highlight selected
+  children[idx].classList.add('selected');
+
+  document.getElementById('next-btn').disabled = false;
+  renderProgress();
+}
+
+function nextQuestion() {
+  if (currentQ < shuffled.length - 1) {
+    currentQ++;
+    renderQuestion();
+  } else {
+    showResults();
+  }
+}
+
+function showResults() {
+  document.getElementById('quiz-screen').classList.add('hide');
+  document.getElementById('result-screen').classList.remove('hide');
+  
+  const correct = answers.filter((a, i) => a === shuffled[i].answer).length;
+  
+  let level = GRADE_LEVELS.find(g => correct >= g.min);
+  if (!level) level = GRADE_LEVELS[GRADE_LEVELS.length - 1];
+
+  document.getElementById('result-emoji').textContent = level.emoji;
+  document.getElementById('result-title').textContent = level.title;
+  document.getElementById('result-grade').textContent = level.grade;
+  document.getElementById('result-score').textContent = `${correct}/10 correct`;
+
+  let msg = level.msg;
+  if (correct >= 7) msg += " 🎉";
+  else if (correct <= 4) msg += " 🤡";
+  document.getElementById('result-message').textContent = msg;
+
+  const shareText = encodeURIComponent(
+    `🍽️ I scored ${correct}/10 on the Cuisine IQ Test and got "${level.title}"!\n\nCan YOU beat a 5th grader? Take the quiz:`
+  );
+  document.getElementById('tweet-btn').href = `https://twitter.com/intent/tweet?text=${shareText}&url=https://royceaisolutions.github.io/cuisine-game`;
+}
+</script>
+<p class="timestamp" style="text-align: center;">Royce AI Solutions — Irvine, CA</p>
+</body>
+</html>
