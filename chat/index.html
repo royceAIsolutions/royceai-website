@@ -121,7 +121,7 @@ body {
 </div>
 
 <script>
-const OR_KEY = 'sk-or-v1-' + '0ccbea9c310deaa2624f2db9300168f2b8ab5a53e0f8c09bf53c75c2f2c2b7ca';
+const API_URL = 'https://chat-api-tawny-zeta.vercel.app/api/chat';
 let history = [];
 let msgCount = 0;
 
@@ -171,27 +171,17 @@ async function sendMessage() {
   history.push({ role: 'user', content: text });
 
   try {
-    const resp = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    const resp = await fetch(API_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + OR_KEY,
-        'HTTP-Referer': 'https://royceaisolutions.github.io',
-        'X-Title': 'RoyceAI Chat',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'openai/gpt-4o-mini',
-        messages: [
-          { role: 'system', content: 'You are RoyceAI — the helpful AI assistant for Royce AI Solutions, based in Irvine, CA. You help with AI receptionists (24/7 call answering for dealerships, medical, dental, vets), RoyceAI Tutor (K-12 Math, Science, English, Korean via Telegram), and the Cuisine Quiz at the website. Keep replies concise, friendly, professional. Current date: July 2026. If someone wants to sign up, direct them to t.me/royceai_bot.' },
-          ...history.slice(-20)
-        ],
-        max_tokens: 500,
-        temperature: 0.7,
+        message: text,
+        history: history.slice(-20)
       }),
     });
 
     const data = await resp.json();
-    let reply = data.choices?.[0]?.message?.content || 'Sorry, I had trouble with that. Try again or email us at royceaisolutions@gmail.com';
+    let reply = data.reply || 'Sorry, I had trouble with that. Email us at royceaisolutions@gmail.com';
     
     history.push({ role: 'assistant', content: reply });
     showTyping(false);
