@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat with RoyceAI — Royce AI Solutions</title>
+<meta name="description" content="Chat with RoyceAI directly on the web. AI receptionist, tutor, and business assistant.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f6fa; min-height: 100vh; display: flex; flex-direction: column;
+}
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white; padding: 20px 24px; text-align: center;
+}
+.header h1 { font-size: 1.5em; margin-bottom: 4px; }
+.header p { font-size: 0.9em; opacity: 0.9; }
+.chat-container {
+  flex: 1; max-width: 700px; width: 100%; margin: 0 auto;
+  display: flex; flex-direction: column; padding: 0 16px 16px;
+}
+.messages {
+  flex: 1; overflow-y: auto; padding: 20px 0;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.msg { max-width: 80%; padding: 12px 16px; border-radius: 16px; line-height: 1.4; }
+.msg.user {
+  align-self: flex-end; background: #667eea; color: white;
+  border-bottom-right-radius: 4px;
+}
+.msg.bot {
+  align-self: flex-start; background: white; color: #2d3436;
+  border-bottom-left-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.msg.loading { align-self: flex-start; background: transparent; padding: 0; }
+.typing { display: flex; gap: 4px; padding: 12px 16px; }
+.typing span {
+  width: 8px; height: 8px; background: #b2bec3; border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes bounce { 0%,60%,100% { transform: translateY(0); } 30% { transform: translateY(-8px); } }
+.input-area {
+  display: flex; gap: 8px; padding: 12px; background: white;
+  border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.input-area input {
+  flex: 1; border: none; outline: none; font-size: 1em; padding: 8px;
+}
+.input-area button {
+  background: #667eea; color: white; border: none;
+  width: 44px; height: 44px; border-radius: 12px; font-size: 1.2em;
+  cursor: pointer; transition: background 0.2s;
+}
+.input-area button:hover { background: #764ba2; }
+.input-area button:disabled { background: #b2bec3; cursor: not-allowed; }
+.quick-btns {
+  display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+  padding: 12px 0;
+}
+.quick-btns button {
+  background: white; border: 1px solid #e9ecef; border-radius: 20px;
+  padding: 8px 16px; font-size: 0.85em; cursor: pointer;
+  transition: all 0.2s; color: #636e72;
+}
+.quick-btns button:hover { background: #667eea; color: white; border-color: #667eea; }
+.status-bar {
+  text-align: center; padding: 8px; font-size: 0.8em; color: #b2bec3;
+}
+.back-link {
+  text-align: center; padding: 16px;
+}
+.back-link a { color: #667eea; text-decoration: none; font-size: 0.9em; }
+.msg.bot a { color: #667eea; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>💬 Chat with RoyceAI</h1>
+  <p>Ask me anything — tutoring, AI receptionists, or just say hi</p>
+</div>
+
+<div class="chat-container">
+  <div class="messages" id="messages">
+    <div class="msg bot">
+      👋 Hey! I'm RoyceAI. I can help with:
+      <br><br>
+      • AI receptionists for your business<br>
+      • Tutoring (math, science, English, Korean)<br>
+      • Answering questions about our services<br>
+      <br>
+      What's on your mind?
+    </div>
+  </div>
+
+  <div class="quick-btns" id="quickBtns">
+    <button onclick="sendQuick('Tell me about your AI receptionist')">📞 AI Receptionist</button>
+    <button onclick="sendQuick('I need a tutor for my child')">🧠 Tutoring</button>
+    <button onclick="sendQuick('What services do you offer?')">🏢 Services</button>
+    <button onclick="sendQuick('Pricing?')">💰 Pricing</button>
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter') sendMessage()">
+    <button id="sendBtn" onclick="sendMessage()">➤</button>
+  </div>
+</div>
+
+<div class="back-link">
+  <a href="https://royceaisolutions.github.io">← Back to Royce AI Solutions</a>
+</div>
+
+<script>
+const BOT_TOKEN = '8049939971:AAEgo1h9GxGUvTEky3KIZBvpHzUlJUs9OEY';
+const CHAT_ID = '8628611223';
+let msgCount = 0;
+
+function addMessage(text, sender) {
+  const msgs = document.getElementById('messages');
+  const div = document.createElement('div');
+  div.className = 'msg ' + sender;
+  div.textContent = text;
+  // Support links in bot messages
+  if (sender === 'bot') {
+    div.innerHTML = text.replace(/\n/g, '<br>');
+    // Make URLs clickable
+    div.innerHTML = div.innerHTML.replace(
+      /(https?:\/\/[^\s<]+)/g,
+      '<a href="$1" target="_blank">$1</a>'
+    );
+  }
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function showTyping(show) {
+  const msgs = document.getElementById('messages');
+  const existing = document.querySelector('.msg.loading');
+  if (existing) existing.remove();
+  if (!show) return;
+  const div = document.createElement('div');
+  div.className = 'msg loading';
+  div.innerHTML = '<div class="typing"><span></span><span></span><span></span></div>';
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+}
+
+function sendQuick(text) {
+  document.getElementById('userInput').value = text;
+  sendMessage();
+}
+
+async function sendMessage() {
+  const input = document.getElementById('userInput');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = '';
+  document.getElementById('sendBtn').disabled = true;
+
+  addMessage(text, 'user');
+  showTyping(true);
+
+  try {
+    // Send to Royce via Telegram
+    const resp = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: `🌐 Website Chat:\n\n${text}`,
+        parse_mode: 'HTML'
+      })
+    });
+    const data = await resp.json();
+    
+    if (data.ok) {
+      // If Royce is online, he'll respond via the bot.
+      // For auto-reply, send a confirmation
+      addMessage("✅ Message sent! RoyceAI will respond shortly. In the meantime, check out our <a href='cuisine-game'>Cuisine Quiz →</a>", 'bot');
+    } else {
+      addMessage("⚠️ Couldn't send. Try again or message us directly on Telegram: t.me/royceai_bot", 'bot');
+    }
+  } catch(e) {
+    addMessage("⚠️ Connection error. Try again or reach us at t.me/royceai_bot", 'bot');
+  }
+
+  showTyping(false);
+  document.getElementById('sendBtn').disabled = false;
+  msgCount++;
+
+  // After 3 messages, prompt to continue on Telegram
+  if (msgCount === 3) {
+    addMessage("💡 Want faster replies? Continue this chat on Telegram: t.me/royceai_bot", 'bot');
+  }
+}
+</script>
+</body>
+</html>
