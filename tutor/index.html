@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="version" content="v6-jul20-2026d">
+<meta name="version" content="v7-jul22-2026">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>RoyceAI Tutor - Your AI Learning Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -70,14 +73,14 @@ body.tutor-page .login-screen{padding-top:calc(80px + var(--nav-h))}
 .btn-primary.btn-dynamic{background:linear-gradient(135deg,#667eea,#764ba2);color:white}
 .logout-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:10px;font-family:var(--font);font-size:.8rem;font-weight:600;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:var(--text-secondary);cursor:pointer}
 .logout-btn:hover{background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.25);color:#ef4444}
-@media(max-width:640px){.dashboard{padding:0 16px;margin-top:3rem}.dash-header h1{font-size:1.3rem}.dash-grid{grid-template-columns:1fr;gap:14px}.scoreboard-grid{grid-template-columns:repeat(2,1fr)}.scoreboard{padding:16px}.score-stat{padding:10px 14px}.score-stat .score{font-size:1.1rem}.dash-card{padding:18px 20px}.quiz-table th,.quiz-table td{padding:8px 10px;font-size:.8rem}nav{padding:0 16px}.nav-links a{font-size:.75rem;padding:6px 10px}.login-screen{padding:60px 16px}.login-box{padding:var(--space-lg) 20px}.login-box h2{font-size:1.3rem}}
+@media(max-width:640px){.dashboard{padding:0 16px;margin-top:7rem}.dash-header h1{font-size:1.3rem}.dash-grid{grid-template-columns:1fr;gap:14px}.scoreboard-grid{grid-template-columns:repeat(2,1fr)}.scoreboard{padding:16px}.score-stat{padding:10px 14px}.score-stat .score{font-size:1.1rem}.dash-card{padding:18px 20px}.quiz-table th,.quiz-table td{padding:8px 10px;font-size:.8rem}nav{flex-direction:column;padding:8px 16px;height:auto;gap:6px;background:rgba(7,7,10,0.95);border-bottom:1px solid rgba(255,255,255,0.08)}.nav-logo{font-size:1rem;width:100%;justify-content:center}.nav-links{width:100%;justify-content:center;flex-wrap:wrap;gap:4px}.nav-links a{font-size:.75rem;padding:5px 10px}.nav-links .nav-cta{padding:5px 14px}.login-screen{padding:60px 16px}.login-box{padding:var(--space-lg) 20px}.login-box h2{font-size:1.3rem}}
 @media(max-width:400px){.dashboard{padding:0 12px;margin-top:2rem}.dash-header h1{font-size:1.1rem}.scoreboard{padding:12px}.score-stat{padding:8px 10px}.score-stat .score{font-size:1rem}.login-screen{padding:40px 12px}.login-box{padding:var(--space-md) 16px}.login-box h2{font-size:1.15rem}.login-box .sub{font-size:.8rem;margin-bottom:var(--space-lg)}.login-box .input-group input{padding:var(--space-sm) var(--space-md)}.dash-card{padding:14px 16px}nav{padding:0 12px}.nav-links a{font-size:.7rem;padding:4px 8px}.nav-links .nav-cta{padding:6px 14px;font-size:.75rem}.quiz-panel{padding:0 12px}}
 </style>
 </head><body class="tutor-page">
 <nav>
 <a href="/" class="nav-logo"><span class="logo-icon">R</span> Royce<span>AI</span></a>
 <div class="nav-links">
-<a href="/products">Products</a><button class="logout-btn nav-logout-btn" id="navLogoutBtn" onclick="logout()" style="display:none">&#x1f6aa; Logout</button><a href="/tutor" style="background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border:1px solid rgba(102,126,234,0.3);padding:6px 16px;font-weight:700">&#x2728; Tutor</a><a href="/blog">Blog</a><a href="/chat" class="nav-cta">&#x1f4ac; Chat</a>
+<a href="/products">Products</a><button class="logout-btn nav-logout-btn" id="navLogoutBtn" onclick="logout()" style="display:none">🔓 Logout</button><a href="/products/tutor" id="navTutorLink" style="background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border:1px solid rgba(102,126,234,0.3);padding:6px 16px;font-weight:700">✨ Tutor</a><a href="/blog">Blog</a>
 </div>
 </nav>
 <div class="login-screen" id="loginScreen">
@@ -144,6 +147,16 @@ body.tutor-page .login-screen{padding-top:calc(80px + var(--nav-h))}
 </div>
 <footer>RoyceAI Solutions. Irvine, CA</footer>
 <script>
+// Cache-buster: if version doesn't match, force reload
+var PAGE_VER='v7-jul22-2026';
+try{
+  var cv=localStorage.getItem('tutor_page_ver');
+  if(cv&&cv!==PAGE_VER){localStorage.clear();location.href='https://royceai.com/tutor/?v='+PAGE_VER}
+  // Also check if URL has the version param — if not, redirect once
+  if(location.search.indexOf('v='+PAGE_VER)<0){location.href='https://royceai.com/tutor/?v='+PAGE_VER}
+  else localStorage.setItem('tutor_page_ver',PAGE_VER);
+}catch(e){}
+// ─── Config ─────────────────────────────────────────────────────
 var API='https://chat-api-tawny-zeta.vercel.app/api';
 var HIST=API+'/quiz-history';
 var UDATA=[{"first": "Jiho", "last": "Pak", "subjects": "Math, 9th Grade Prep, Bible Study", "today": "—", "mtd": "493/526 (94%)", "ytd": "493/526 (94%)", "plan": "free_trial", "cards": "math,grade9", "kpis": [{"label": "Math", "val": "96/100"}, {"label": "Streak", "val": "7 days"}, {"label": "Focus Time", "val": "45 min/day"}]},{"first": "Carter", "last": "Koh", "subjects": "SAT Prep, Basketball, 11th Grade", "today": "—", "mtd": "281/354 (79%)", "ytd": "281/354 (79%)", "plan": "free_trial", "cards": "sat,math,grade11", "kpis": [{"label": "SAT", "val": "64/80"}, {"label": "Bench", "val": "185 lb"}, {"label": "Streak", "val": "5 days"}]},{"first": "Angel", "last": "Koh", "subjects": "RN Training, NCLEX, Health", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "rn", "kpis": [{"label": "NCLEX", "val": "72%"}, {"label": "Modules", "val": "8/12"}, {"label": "Study Time", "val": "30 min/day"}]},{"first": "Paxton", "last": "Koh", "subjects": "Reading Games, ABCs, Colors", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "reading,preschool", "kpis": []},{"first": "Josh", "last": "Lucero", "subjects": "Series 66, Series 7, Finance", "today": "—", "mtd": "47/50 (94%)", "ytd": "47/50 (94%)", "plan": "free_trial", "cards": "series66,series7", "kpis": [{"label": "Series 66", "val": "74%"}, {"label": "Progress", "val": "60%"}, {"label": "Study Time", "val": "25 min/day"}]},{"first": "Mason", "last": "Min", "subjects": "Baby Play, ABCs, Colors", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "baby", "kpis": [{"label": "Age", "val": "Toddler"}, {"label": "Learning", "val": "ABCs"}, {"label": "Milestones", "val": "On track"}]},{"first": "Pearl", "last": "Johnson", "subjects": "Preschool Play, Letters, Numbers", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "baby,preschool", "kpis": [{"label": "Colors", "val": "6/6"}, {"label": "Games", "val": "3 played"}, {"label": "Stars", "val": "15"}]},{"first": "Ruby", "last": "Johnson", "subjects": "Reading, Math, Grade 2", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "reading,math,grade2", "kpis": [{"label": "Math", "val": "4/5"}, {"label": "Games", "val": "2 played"}, {"label": "Stars", "val": "8"}]},{"first": "Carter", "last": "Touch", "subjects": "Grade 9, Liberty HS, Math", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "math,grade9", "kpis": [{"label": "GPA", "val": "3.5"}, {"label": "Liberty HS", "val": "Freshman"}, {"label": "Sessions", "val": "0"}]},{"first": "Chase", "last": "Touch", "subjects": "Grade 7, Nelson MS, Pre-Algebra", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "math,reading,grade7", "kpis": [{"label": "Pre-Alg", "val": "B+"}, {"label": "Nelson MS", "val": "7th Grade"}, {"label": "Sessions", "val": "0"}]},{"first": "Tommy", "last": "Touch", "subjects": "Therapy Bot, Social Skills, Emotional Growth", "today": "—", "mtd": "—", "ytd": "—", "plan": "free_trial", "cards": "therapy", "kpis": [{"label": "Therapy", "val": "Active"}, {"label": "Sessions", "val": "0"}, {"label": "Streak", "val": "New"}]},{"first": "Test", "last": "User", "subjects": "Math, SAT Prep, Science", "today": "8/10 (80%)", "mtd": "15/20 (75%)", "ytd": "15/20 (75%)", "plan": "free_trial", "cards": "math,sat,grade9", "kpis": [{"label": "Math", "val": "8/10"}, {"label": "SAT", "val": "70/80"}, {"label": "Streak", "val": "1 day"}]},{"first": "Test", "last": "User", "subjects": "Math, SAT Prep, Science", "today": "8/10 (80%)", "mtd": "15/20 (75%)", "ytd": "15/20 (75%)", "plan": "free_trial", "cards": "math,sat,grade9", "kpis": [{"label": "Math", "val": "8/10"}, {"label": "SAT", "val": "70/80"}, {"label": "Streak", "val": "1 day"}]}];
@@ -155,8 +168,18 @@ function login(){
   var fn=fi.value.trim(),ln=li.value.trim();
   if(!fn||!ln){er.textContent="Enter both first and last name.";er.style.display="block";return;}
   var u=UDATA.find(function(x){return x.first.toLowerCase()===fn.toLowerCase()&&x.last.toLowerCase()===ln.toLowerCase();});
-  if(!u){er.textContent="Name not found: "+fn+" "+ln;er.style.display="block";return;}
-  CU=u;localStorage.setItem("tutor_user",JSON.stringify(u));showDash(u);
+  // Fetch live data from Vercel API (hits GitHub API directly — always fresh, no CDN cache)
+  fetch(API+"/student-stats",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({student:fn+" "+ln})})
+  .then(function(r){return r.json()})
+  .then(function(d){
+    if(d.found&&d.data) u=d.data;
+    if(!u){er.textContent="Name not found: "+fn+" "+ln;er.style.display="block";return;}
+    CU=u;localStorage.setItem("tutor_user",JSON.stringify(u));showDash(u);
+  })
+  .catch(function(){
+    if(!u){er.textContent="Name not found: "+fn+" "+ln;er.style.display="block";return;}
+    CU=u;localStorage.setItem("tutor_user",JSON.stringify(u));showDash(u);
+  });
 }
 function showDash(u){
   document.getElementById("appContainer").classList.add("show");
@@ -195,7 +218,10 @@ async function loadHist(n){
     if(!ss.length){tb.innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--text-secondary)">No sessions yet</td></tr>';return;}
     tb.innerHTML=ss.slice(-10).reverse().map(function(s){
       var p=Math.round(s.correct/s.total*100);
-      return '<tr><td>'+(s.date||"-")+"</td><td>"+(s.mode||"quiz")+'</td><td><strong>'+s.correct+"/"+s.total+"</strong> ("+p+"%)</td><td>"+(p>=80?"Pass":"Review")+"</td></tr>";
+      var t='';
+      if(s.time){var d=new Date(s.time);t=d.toLocaleDateString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).replace(',','')}
+      else{t=s.date||'-'}
+      return '<tr><td>'+t+'</td><td>'+(s.mode||"quiz")+'</td><td><strong>'+s.correct+"/"+s.total+"</strong> ("+p+"%)</td><td>"+(p>=80?"✅ Pass":"📖 Review")+"</td></tr>";
     }).join("");
   }catch(e){tb.innerHTML='<tr><td colspan="4" style="text-align:center;color:var(--text-secondary)">Error</td></tr>';}
 }
@@ -209,7 +235,7 @@ function logout(){
   document.getElementById("navLogoutBtn").style.display="none";
 }
 
-var iqHist=[],iqSubj="",iqCorr=0,iqTot=0,iqBusy=false,iqRetry=0;
+var iqHist=[],iqSubj="",iqCorr=0,iqTot=0,iqTotal=33,iqBusy=false,iqRetry=0;
 function startInlineQuiz(s){
   iqSubj=s;iqCorr=0;iqTot=0;iqHist=[];iqBusy=false;iqRetry=0;
   document.getElementById("dashGrid").style.display="none";
@@ -217,8 +243,8 @@ function startInlineQuiz(s){
   document.getElementById("quizPanel").style.display="block";
   document.getElementById("quizQ").textContent="Loading...";
   document.getElementById("quizA").innerHTML="";
-  document.getElementById("quizProg").textContent="0% (0/0)";
-  document.getElementById("quizScr").textContent="0/0";
+  document.getElementById("quizProg").textContent="Q0/"+iqTotal;
+  document.getElementById("quizScr").textContent="—";
   askQ("Start "+s+" quiz");
 }
 function closeIQ(){
@@ -229,13 +255,15 @@ function closeIQ(){
 function askQ(msg){
   iqBusy=true;
   document.getElementById("quizA").innerHTML="<div style='color:var(--text-muted);padding:20px'>Loading...</div>";
-  fetch(API+"/quiz",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:msg,history:iqHist.slice(-30)})})
+  fetch(API+"/quiz",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:msg,history:iqHist.slice(-30),subject:iqSubj})})
   .then(function(r){return r.json()})
   .then(function(d){
     var reply=d.reply||"No response";
     iqHist.push({role:"user",content:msg},{role:"assistant",content:reply});
     iqBusy=false;
     if(reply.match(/Quiz complete|completed|done|final|finished/gi)){finishQ(reply);return;}
+    // Parse total question count from format like "Q1/33:" or "Q1/33 "
+    if(!iqTot){var tm=reply.match(/Q\d+\/(\d+)/);if(tm)iqTotal=parseInt(tm[1]);}
     showQ(reply);
   })
   .catch(function(e){
@@ -264,10 +292,9 @@ function showQ(reply){
   document.getElementById("quizA").innerHTML=opts.map(function(o){
     return "<button data-letter='"+o.charAt(0).toLowerCase()+"' class='iq-btn' onclick='ansQ(this)'><span class='iq-letter'>"+o.charAt(0)+"</span><span>"+o.substring(2).trim()+"</span></button>";
   }).join("");
-  // Update progress display — show running score instead of Q count
+  // Update score display
   var pct=Math.round(iqCorr/Math.max(iqTot,1)*100);
-  document.getElementById("quizProg").textContent=pct+"% ("+iqCorr+"/"+Math.max(iqTot,1)+")";
-  document.getElementById("quizScr").textContent=iqCorr+"/"+Math.max(iqTot,1);
+  document.getElementById("quizScr").textContent=pct+"%";
 }
 function ansQ(btn){
   if(iqBusy)return;
@@ -278,17 +305,18 @@ function ansQ(btn){
   btn.style.borderColor="var(--accent)";btn.style.background="rgba(124,92,252,0.15)";
   document.getElementById("quizA").innerHTML="";
   document.getElementById("quizQ").innerHTML="<div style='color:var(--text-muted);padding:10px'>Checking answer...</div>";
-  fetch(API+"/quiz",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:letter,history:iqHist.slice(-30)})})
+  fetch(API+"/quiz",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:letter,history:iqHist.slice(-30),subject:iqSubj})})
   .then(function(r){return r.json()})
   .then(function(d){
     var reply=d.reply||"No response";
     iqHist.push({role:"user",content:letter},{role:"assistant",content:reply});
     iqBusy=false;
-    if(reply.match(/correct/i)&&!reply.match(/incorrect/i))iqCorr++;
-    // Check 80% mastery: minimum 10 questions, need 80%+ accuracy, max 50
+    if(reply.match(/^Correct/i))iqCorr++;
+    // Check 80% mastery: minimum 33 questions, need 80%+ accuracy, max 50
     var pct=Math.round(iqCorr/Math.max(iqTot,1)*100);
-    document.getElementById("quizScr").textContent=iqCorr+"/"+iqTot+" ("+pct+"%)";
-    if(iqTot>=10&&pct>=80){finishQ(reply);return;}
+    document.getElementById("quizProg").textContent="Q"+iqTot+"/"+iqTotal;
+    document.getElementById("quizScr").textContent=pct+"%";
+    if(iqTot>=33&&pct>=80){finishQ(reply);return;}
     if(iqTot>=50){finishQ("Quiz complete — 50 questions max. Score: "+iqCorr+"/"+iqTot);return;}
     showQ(reply);
   })
@@ -321,8 +349,9 @@ function finishQ(reply){
       document.getElementById("topicsList").textContent=CU.subjects||iqSubj||"-";
     }
     document.getElementById("quizA").innerHTML="<button onclick=closeIQ() style='margin-top:16px;padding:12px 28px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer'>&larr; Back to Dashboard</button>";
-    document.getElementById("quizProg").textContent="Done!";
-    document.getElementById("quizScr").textContent=corr+"/"+tot;
+    document.getElementById("quizProg").textContent="✓ Done!";
+    var fpct=Math.round(corr/Math.max(tot,1)*100);
+    document.getElementById("quizScr").textContent=fpct+"%";
   })
   .catch(function(){
     document.getElementById("quizA").innerHTML="<button onclick=closeIQ() style='margin-top:16px;padding:12px 28px;background:var(--accent);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer'>&larr; Back to Dashboard</button>";
@@ -337,7 +366,16 @@ var saved=localStorage.getItem("tutor_user");
 if(saved){
   try{
     var u=JSON.parse(saved),match=UDATA.find(function(x){return x.first===u.first&&x.last===u.last;});
-    if(match){CU=match;showDash(match);}else localStorage.removeItem("tutor_user");
+    if(match){
+      CU=match;
+      // Fetch live data from API (UDATA has stale today: "—")
+      fetch(API+"/student-stats",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({student:match.first+" "+match.last})})
+      .then(function(r){return r.json()})
+      .then(function(d){
+        if(d.found&&d.data){CU=d.data;showDash(CU)}else showDash(match);
+      })
+      .catch(function(){showDash(match);});
+    }else localStorage.removeItem("tutor_user");
   }catch(e){localStorage.removeItem("tutor_user");}
 }
 </script>
@@ -361,28 +399,20 @@ if(saved){
 .lc-thanks p{color:#a0a0c0;font-size:.85rem;margin:0}
 .lc-error{color:#ef4444;font-size:.8rem;margin-top:4px;display:none}
 </style>
-<div id="lc-root">
-<button class="lc-btn" id="lcBtn" onclick="toggleLeadPanel()">💬</button>
-<div class="lc-panel" id="lcPanel">
-<div class="lc-header"><span>☄️ Talk to RoyceAI</span><button class="lc-close" onclick="toggleLeadPanel()">x</button></div>
-<div class="lc-body" id="lcForm">
-<p style="color:#a0a0c0;font-size:.85rem;margin:0 0 12px">Tell us about your needs.</p>
-<label>Full Name *</label><input id="lcName" placeholder="Your name">
-<label>Email *</label><input id="lcEmail" type="email" placeholder="your@email.com">
-<label>What service?</label><select id="lcService"><option value="">Select...</option><option value="Tutoring">Tutoring</option><option value="Trading">Trading</option><option value="AI Development">AI Development</option><option value="Other">Other</option></select>
-<label>Who is this for?</label><input id="lcFor" placeholder="Me / My child / My business">
-<label>Budget</label><select id="lcBudget"><option value="">Select...</option><option value="Under $100/mo">Under $100/mo</option><option value="$100-500/mo">$100-500/mo</option><option value="$500-1k/mo">$500-1k/mo</option><option value="$1k+/mo">$1k+/mo</option><option value="Not sure">Not sure</option></select>
-<label>How soon?</label><select id="lcTimeline"><option value="">Select...</option><option value="ASAP">ASAP</option><option value="This month">This month</option><option value="Next month">Next month</option><option value="Just exploring">Just exploring</option></select>
-<label>Where heard?</label><select id="lcSource"><option value="">Select...</option><option value="Google">Google</option><option value="Friend">Friend</option><option value="Social Media">Social Media</option><option value="Telegram">Telegram</option><option value="Other">Other</option></select>
-<label>Message</label><textarea id="lcMessage" placeholder="Tell us more..."></textarea>
-<div class="lc-error" id="lcError"></div>
-<button class="lc-submit" onclick="submitLead()">Send</button>
-</div>
-<div class="lc-thanks" id="lcThanks"><h3>Sent!</h3><p>We'll get back within 24 hours.</p></div>
-</div></div>
 <script>
-function toggleLeadPanel(){document.getElementById('lcPanel').classList.toggle('open')}
-function submitLead(){var n=document.getElementById('lcName').value.trim(),e=document.getElementById('lcEmail').value.trim(),er=document.getElementById('lcError');if(!n){er.textContent='Name required';er.style.display='block';return}if(!e||!e.includes('@')){er.textContent='Valid email required';er.style.display='block';return}er.style.display='none';fetch('https://chat-api-tawny-zeta.vercel.app/api/leads',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,email:e,service:document.getElementById('lcService').value,for_whom:document.getElementById('lcFor').value.trim(),budget:document.getElementById('lcBudget').value,timeline:document.getElementById('lcTimeline').value,source:document.getElementById('lcSource').value,message:document.getElementById('lcMessage').value.trim(),date:new Date().toISOString(),source_page:window.location.pathname})}).then(function(){document.getElementById('lcForm').style.display='none';document.getElementById('lcThanks').classList.add('show');setTimeout(function(){toggleLeadPanel()},4000)}).catch(function(){er.textContent='Network error';er.style.display='block'})}
+// Auto-refresh scoreboard every 30s (silent, no button)
+setInterval(function(){
+  if(!CU)return;
+  fetch(API+"/student-stats",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({student:CU.first+" "+CU.last})})
+  .then(function(r){return r.json()})
+  .then(function(d){
+    if(d.found&&d.data){
+      var u=d.data;
+      CU.today=u.today||"-";CU.mtd=u.mtd||"-";CU.ytd=u.ytd||"-";CU.kpis=u.kpis||CU.kpis;
+      renderSB(CU);
+    }
+  }).catch(function(){});
+},30000);
 </script>
 </body>
 </html>
