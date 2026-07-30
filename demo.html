@@ -33,7 +33,7 @@
 <div class="card">
     <div class="logo">Royce<span>AI</span></div>
     <h1>Try RoyceAI</h1>
-    <p>We'll create a private Telegram group and add you. 24-hour live demo, no commitment.</p>
+    <p>We'll add you to the Angel AI Discord server. 24-hour live demo, no commitment.</p>
     
     <div class="steps">
         <div class="step active">1. Fill form</div>
@@ -45,15 +45,15 @@
         <label>Your Name</label>
         <input type="text" id="name" required placeholder="e.g. John Smith">
         
-        <label>Telegram Handle or Phone</label>
-        <input type="text" id="contact" required placeholder="@username or +1 (555) 000-0000">
+        <label>Discord Username</label>
+        <input type="text" id="contact" required placeholder="e.g. username#0000">
         
         <label>Email</label>
         <input type="email" id="email" required placeholder="you@example.com">
         
         <label>Best Contact Method</label>
         <select id="contact_method">
-            <option value="telegram">Telegram</option>
+            <option value="discord">Discord</option>
             <option value="voice">Phone Call</option>
             <option value="email">Email</option>
         </select>
@@ -87,8 +87,8 @@ document.getElementById('demoForm').onsubmit = async function(e){
         if (d.ok) {
             document.getElementById('result').innerHTML = 
                 '<div class="success">✅ Demo group created!<br><br>' +
-                '<a href="'+d.invite_link+'" target="_blank" style="display:inline-block;background:#6366f1;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600">Join Your Group</a>' +
-                '<br><br>Check your Telegram app. The group expires in 24 hours.</div>';
+                '<a href="https://discord.gg/rqPwPbD3r" target="_blank" style="display:inline-block;background:#6366f1;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600">Join Discord Server</a>' +
+                '<br><br>Check your Discord. The server is live.</div>';
             document.getElementById('demoForm').style.display = 'none';
         } else {
             document.getElementById('result').innerHTML = '<div class="error">❌ ' + d.error + '</div>';
